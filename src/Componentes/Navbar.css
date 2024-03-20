@@ -1,0 +1,67 @@
+
+
+
+
+li{
+ list-style: none;
+ font-family: 'League Spartan';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 23px;
+ line-height: 21px;
+}
+
+
+
+.navbar {
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    z-index: 1000; 
+    padding-top: 20px;
+}
+  
+.navbarList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+    padding: 0; 
+}
+  
+.navbarList li, .navbarList li a { 
+   
+    text-decoration: none; 
+}
+  
+.navbarLogo {
+    width: 149px;
+    height: 104px;
+    left: 901px;
+    top: 62px;
+}
+
+
+  /* Aplica el desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

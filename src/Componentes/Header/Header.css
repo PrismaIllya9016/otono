@@ -1,0 +1,97 @@
+.header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('public/foto fondo.png'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #582114; /* Tu color de filtro */
+    opacity: 0.5; /* Ajusta la opacidad según necesites */
+  }
+  
+
+  .texto1 {
+    position: absolute;
+    width: 80vw; /* Ajusta según sea necesario, pero usa vw para ser responsive */
+    max-width: 1028px; /* Ancho máximo para evitar que el texto sea demasiado grande en pantallas grandes */
+    height: auto; /* Altura automática para acomodar el tamaño del texto */
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%); /* Centra el texto de manera más efectiva */
+  
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.8vw; /* Adaptable al ancho de la pantalla, ajusta según necesites */
+    line-height: 1.14; /* Basado en tu línea de 114% */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Asegura el centrado del texto dentro del div */
+    text-align: center;
+    z-index: 1001;
+    color: #FFFFFF;
+  }
+  
+  /* Media queries para tamaños de pantalla específicos */
+  @media (max-width: 768px) {
+    .texto1 {
+      font-size: 3.5vw; /* Tamaño de fuente más grande para dispositivos pequeños */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .texto1 {
+      font-size: 4.5vw; /* Aún más grande para pantallas muy pequeñas */
+    }
+  }
+  
+
+  .texto2 {
+    position: absolute;
+    width: 80vw; /* Ajusta el ancho relativo al ancho de la ventana */
+    max-width: 920px; /* Ancho máximo */
+    height: auto; /* Altura automática para ajustar el contenido */
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%); /* Centrado efectivo */
+    z-index: 1001;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8vw; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
+    line-height: 1.12; /* Ajusta la altura de línea según necesites */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido de manera efectiva */
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  /* Media queries para ajustar el tamaño de fuente en dispositivos más pequeños */
+  @media (max-width: 768px) {
+    .texto2 {
+      font-size: 3.0vw; /* Aumenta el tamaño de fuente para mejorar la legibilidad */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .texto2 {
+      font-size: 4.0vw; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
+    }
+  }
+  
+
+  
