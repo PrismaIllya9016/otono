@@ -72,6 +72,7 @@ function Habitaciones() {
           variant="h3"
           sx={{
             fontFamily: "league Spartan",
+            paddingTop: "28px",
             color: "#582114",
             display: "flex",
           }}
@@ -154,6 +155,7 @@ function Habitaciones() {
                 width: "815px",
                 height: "464px",
                 marginTop: "20px",
+                borderRadius: "25px",
               }}
               src={imagen}
               alt=""

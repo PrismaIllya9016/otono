@@ -39,6 +39,22 @@ function Navbar() {
       setShadow("none"); // Quita la sombra
     }
   };
+  const handleNavLinkClick = (e) => {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+    const href = e.currentTarget.getAttribute("href");
+    const offset = 144; // Ajusta este valor según necesites
+    const element = document.getElementById(href.substring(1));
+
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -46,7 +62,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
-  });
+  }); // Asegúrate de incluir las dependencias apropiadas aquí si las hay
 
   return (
     <div
@@ -63,6 +79,7 @@ function Navbar() {
         <li>
           <a
             href="#objetivo"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Nosotros
@@ -71,6 +88,7 @@ function Navbar() {
         <li>
           <a
             href="#estancias"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Estancia
@@ -79,6 +97,7 @@ function Navbar() {
         <li className="habitaciones">
           <a
             href="#habitaciones"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Habitaciones
@@ -87,6 +106,7 @@ function Navbar() {
         <li>
           <a
             href="#Header"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             <img
@@ -99,6 +119,7 @@ function Navbar() {
         <li>
           <a
             href="#instalaciones"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Instalaciones
@@ -107,6 +128,7 @@ function Navbar() {
         <li>
           <a
             href="#actividades"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Actividades
@@ -115,6 +137,7 @@ function Navbar() {
         <li>
           <a
             href="#contacto"
+            onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
             Contacto
