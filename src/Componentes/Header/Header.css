@@ -48,13 +48,14 @@
   /* Media queries para tamaños de pantalla específicos */
   @media (max-width: 768px) {
     .texto1 {
-      font-size: 3.5vw; /* Tamaño de fuente más grande para dispositivos pequeños */
+      font-size: 5.5vw; /* Tamaño de fuente más grande para dispositivos pequeños */
     }
   }
   
   @media (max-width: 480px) {
     .texto1 {
-      font-size: 4.5vw; /* Aún más grande para pantallas muy pequeñas */
+      font-size: 8.5vw; /* Aún más grande para pantallas muy pequeñas */
+     
     }
   }
   
@@ -89,7 +90,8 @@
   
   @media (max-width: 480px) {
     .texto2 {
-      font-size: 4.0vw; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
+      font-size: 5.6vw; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
+      top: 70%;
     }
   }
   

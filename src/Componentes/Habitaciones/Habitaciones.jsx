@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Habitaciones.css";
 import { Box, Container, Typography } from "@mui/material";
 
@@ -9,6 +9,26 @@ function Habitaciones() {
     "Incluye: Baño privado,Telefonía, Internet"
   );
 
+  //   PARALAX EFFECT
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      const parallaxSpeed = 0.6;
+      const parallaxOffset = scrolled * parallaxSpeed;
+      document.querySelector(
+        ".Habitaciones"
+      ).style.backgroundPositionY = `${parallaxOffset}px`;
+    };
+
+    // Añade el evento de desplazamiento cuando el componente se monta
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpia el evento de desplazamiento cuando el componente se desmonte
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const images = [
     {
       label: "Estandar",
@@ -17,12 +37,12 @@ function Habitaciones() {
     },
     {
       label: "Mini suite",
-      imgPath: "public/1d6078d8-29e6-4bdc-8d3a-9c8b5566de69.png",
+      imgPath: "public/Habitaciones/minisuite_habitacion.jpg",
       textoImagen: "Incluye: Baño privado,Telefonía, Internet, TV con cable",
     },
     {
       label: "Duplex",
-      imgPath: "public/20240306_150123.jpg",
+      imgPath: "public/Habitaciones/duplex_habitacion.jpg",
       textoImagen:
         "Incluye: Baño privado,Telefonía, Internet, TV con cable, Aire acondicionado, Ser hijo de dios",
     },
@@ -40,15 +60,31 @@ function Habitaciones() {
 
   const obtenerEstiloBorderRight = (item) => {
     return {
+      cursor: "pointer",
       borderRight:
         seleccionado === item
-          ? "4px solid rgba(99, 48, 27, 1)"
-          : "4px solid rgba(99, 48, 27, 0.19)",
+          ? "5px solid rgba(99, 48, 27, 1)"
+          : "5px solid rgba(99, 48, 27, 0.19)",
       paddingRight: "20px",
       height: "135px",
       display: "flex",
       alignItems: "center",
       justifyContent: "flex-start",
+      transition: "border-right 0.5s ease",
+    };
+  };
+
+  const obtenerEstiloBorderTop = (item) => {
+    return {
+      borderTop:
+        seleccionado === item
+          ? "8.5px solid rgba(99, 48, 27, 1)"
+          : "8.5px solid rgba(99, 48, 27, 0.19)",
+      width: "92px",
+      display: "flex",
+      alignItems: "center",
+      borderRadius: "55px",
+
       transition: "border-right 0.5s ease",
     };
   };
@@ -61,43 +97,21 @@ function Habitaciones() {
     >
       <Box
         sx={{
-          position: "absolute",
           width: "100%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
         }}
       >
-        <Typography
-          variant="h3"
-          sx={{
-            fontFamily: "league Spartan",
-            paddingTop: "28px",
-            color: "#582114",
-            display: "flex",
-          }}
-        >
-          Habitaciones
-        </Typography>
+        <h1 className="TitulosCentrados">Habitaciones</h1>
 
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: "league Spartan",
-            width: "60%",
-            textAlign: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "auto",
-            marginTop: "5%",
-          }}
-        >
+        <h2 style={{ height: "auto" }} className="descCentrada" id="desHab">
           Cada espacio refleja nuestro compromiso con la comodidad, seguridad y
           bienestar, por ellos contamos con 3 tipos de habitaciones.
-        </Typography>
+        </h2>
 
         <Box
+          className="cajaCompleta"
           sx={{
             display: "flex",
             width: "100%",
@@ -107,7 +121,7 @@ function Habitaciones() {
             justifyContent: "center",
           }}
         >
-          <Container>
+          <Container className="Menu" sx={{ width: "30%", marginLeft: "10%" }}>
             {" "}
             <ul
               style={{
@@ -141,18 +155,23 @@ function Habitaciones() {
               </li>
             </ul>
           </Container>
+
           <Container
+            className="ImagenContainer"
             sx={{
+              zIndex: "1002",
               position: "relative",
               marginRight: "15%",
+
               display: "flex",
               justifyContent: "flex-start",
               flexDirection: "column",
             }}
           >
             <img
+              className="ImagenHabitacion"
               style={{
-                width: "815px",
+                maxWidth: "815px",
                 height: "464px",
                 marginTop: "20px",
                 borderRadius: "25px",
@@ -160,14 +179,48 @@ function Habitaciones() {
               src={imagen}
               alt=""
             />
-            <Typography sx={{ marginTop: "20px", width: "900px" }} variant="h6">
+            <Typography
+              className="Incluye"
+              sx={{ marginTop: "20px", width: "900px" }}
+              variant="h6"
+            >
               {texto}
             </Typography>
           </Container>
+          <ul
+            className="MenuMovil"
+            style={{
+              color: "#DD927A",
+              fontSize: "5rem",
+              display: "flex",
+              justifyContent: "space-around",
+              width: "100%",
+            }}
+          >
+            <li
+              style={obtenerEstiloBorderTop("Estandar")}
+              onClick={() => manejarClick("Estandar")}
+            ></li>
+            <li
+              style={obtenerEstiloBorderTop("Mini suite")}
+              onClick={() => manejarClick("Mini suite")}
+            >
+              <a> </a>
+            </li>
+            <li
+              style={obtenerEstiloBorderTop("Duplex")}
+              onClick={() => manejarClick("Duplex")}
+            >
+              <a style={{ paddingRight: "16px" }}></a>
+            </li>
+          </ul>
         </Box>
       </Box>
 
-      <div className="custom-shape-divider-bottom-1710877318">
+      <Box
+        sx={{ marginTop: "24px" }}
+        className="custom-shape-divider-bottom-1710877318"
+      >
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +232,7 @@ function Habitaciones() {
             className="shape-fill2"
           ></path>
         </svg>
-      </div>
+      </Box>
     </div>
   );
 }

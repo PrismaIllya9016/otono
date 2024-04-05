@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
+import MobileMenu from "./MobileMenu";
 
 function Navbar() {
   const [background, setBackground] = useState("transparent");
@@ -7,7 +8,7 @@ function Navbar() {
   const [shadow, setShadow] = useState("none"); // Estado inicial para la sombra
 
   const interpolateColor = (scrollY, start, end, maxScroll) => {
-    const percent = Math.min(scrollY / maxScroll, 1); // Asegura que el valor esté entre 0 y 1
+    const percent = Math.min(scrollY / maxScroll, 0.96); // Asegura que el valor esté entre 0 y 1
     const startRGB = parseInt(start.substring(1), 16); // Convierte el color inicial a RGB
     const endRGB = parseInt(end.substring(1), 16); // Convierte el color final a RGB
     const startR = (startRGB >> 16) & 0xff;
@@ -24,14 +25,14 @@ function Navbar() {
 
   const listenScrollEvent = () => {
     const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 800, 1); // Ajusta para controlar la rapidez del cambio
+    const opacity = Math.min(scrollY / 800, 0.96); // Ajusta para controlar la rapidez del cambio
 
     if (scrollY > 50) {
       setBackground(`rgba(255, 255, 255, ${opacity})`); // Cambia el fondo gradualmente
       setColor(interpolateColor(scrollY, "#FFFFFF", "#582114", 800)); // Interpola el color de las letras
       if (opacity === 1) {
         // Aplica sombra cuando alcanza la opacidad máxima
-        setShadow("0px 4px 6px rgba(0, 0, 0, 0.1)");
+        setShadow("0px 4px 6px rgba(0, 0, 0, 0.4)");
       }
     } else {
       setBackground("transparent");
@@ -43,7 +44,7 @@ function Navbar() {
     e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
 
     const href = e.currentTarget.getAttribute("href");
-    const offset = 144; // Ajusta este valor según necesites
+    const offset = 114; // Ajusta este valor según necesites
     const element = document.getElementById(href.substring(1));
 
     if (element) {
@@ -67,9 +68,17 @@ function Navbar() {
   return (
     <div
       className="navbar"
-      style={{ backgroundColor: background, color: color, boxShadow: shadow }}
+      style={{
+        backgroundColor: background,
+        color: color,
+        boxShadow: shadow,
+        height: "fit-content",
+        zIndex: "2000",
+      }}
     >
+      {/* NavbarWeb */}
       <ul
+        className="NavbarWeb"
         style={{
           display: "flex",
           justifyContent: "space-evenly",
@@ -144,6 +153,26 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <div
+        className="cellDiv"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginLeft: "14px",
+        }}
+      >
+        <a href="#Header">
+          {" "}
+          <img
+            className="logoCell"
+            src="public\PNG Objetivo\LogoCell.svg"
+            alt=""
+          />
+        </a>
+
+        <MobileMenu></MobileMenu>
+      </div>
     </div>
   );
 }

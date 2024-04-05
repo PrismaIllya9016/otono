@@ -17,7 +17,7 @@ function Objetivo() {
 
   return (
     <Grid className="Objetivo" id="objetivo" container spacing={2}>
-      <Grid item xs={7}>
+      <Grid item xs={12} md={7}>
         <h1 className="nuestroObjetivo">Nuestro objetivo</h1>
         <h2 className="descObjetivo">
           Es fomentar la autosuficiencia, la socialización y el desarrollo de
@@ -101,7 +101,7 @@ function Objetivo() {
           </li>
         </ul>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item xs={12} md={5}>
         {" "}
         <img src="public/fotoPelota.png" alt="" style={imageStyles} />
       </Grid>

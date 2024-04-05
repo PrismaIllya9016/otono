@@ -9,21 +9,34 @@ import Header from "./Componentes/Header/Header";
 import Instalaciones from "./Componentes/Instalaciones/Instalaciones";
 import Navbar from "./Componentes/Navbar";
 import Objetivo from "./Componentes/Objetivo/Objetivo";
+import CarruselEstancias from "./Componentes/Estancias/CarruselEstancias";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CarruselActividades from "./Componentes/Actividades/CarruselActividades";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["League Spartan"],
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <Objetivo />
-      <Estancias />
-      <Habitaciones />
-      <Instalaciones />
-      <Actividades />
-      <Eventos />
-      <Contacto />
-      <Footer />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Navbar />
+        <Header />
+        <Objetivo />
+        <Estancias />
+        <CarruselEstancias />
+        <Habitaciones />
+        <Instalaciones />
+        <Actividades />
+        <CarruselActividades />
+        <Eventos />
+        <Contacto />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

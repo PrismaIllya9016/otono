@@ -1,0 +1,532 @@
+@media only screen and ( min-width: 321px)  and (max-width: 600px) {
+ .main-container ul,
+  li {
+    list-style: none;
+    white-space: nowrap;
+  }
+  
+  /* Estilo para cada elemento de la lista */
+ .main-container li {
+    display: inline-block;
+    width: 90vw; /* Ancho igual al 80% del contenedor principal */
+    margin: auto;
+    max-width: 500px; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+    white-space: normal; /* Restablecer el espaciado entre líneas */
+    vertical-align: top; /* Alinear las imágenes en la parte superior */
+  }
+  
+  /* Main container */
+  .main-container {
+    margin-top: 10%;
+    width: 90vw;
+    margin: auto;
+    height: 140vh ;
+  }
+
+  /* dots carrusel */
+  .dots-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6vh;   
+  }
+  
+  .dot-container-item {
+    margin: 8px 3px;
+    cursor:pointer;
+    font-size: 12px;
+    width: 80px;
+    height: 1.5vh;
+    display: block;
+    text-align: center;
+  }
+
+  .dot-container-item.active .boton {
+    width: 100%;
+    height: 100%;
+    top:0;
+    opacity: 1;
+    border-style: none;
+  }
+
+  .dot-container-item .boton {
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: #63301B;
+    opacity: 0.19;
+    transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+    border-style: none;
+    border-radius: 5px;
+  }
+
+  .saber-mas2 {
+    width: 120px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 10%;
+    border-style: none;
+    border-radius: 5px;
+    z-index: 1006;
+  }
+
+  
+
+  /* Contenedor de imágenes */
+  .container-images {
+    position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    margin: auto;
+    height: 120%;
+    overflow: hidden; /* Si es necesario */
+    margin-top: clamp(4vh, 10%, 15%) !important; /* Ajusta según sea necesario */
+    display: flex;
+  }
+  
+  .main-container .textos-card{
+    height: 80vh;
+    margin-right: 0px;
+    top:clamp(-89.95vh, -89.65vh, -85.95vh);
+  }
+
+  .container-images ul li img{
+    margin-top: 20%;
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .container-images ul {
+    width: 100%;
+    margin: auto;
+    display: relative;
+    padding-inline-start: 0px;
+    margin-top: 10%;
+    border: none;
+  }
+  
+  /* Estilo para cada imagen */
+  .container-images img {
+    width: 100%; /* Ancho completo de la imagen */
+    height: 80vh; /* Altura automática para mantener la proporción */
+    margin-top: 12.5%;
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+   
+  .tituloEstancias {
+    position: relative;
+    font-family: 'League Spartan';
+    top: clamp(18px, 3.4vh, 7.5vh);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vh;
+    line-height: 50px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: #582114;
+    z-index: 1001;
+  }
+  
+  .original-text{
+    font-size: 5vh !important;
+    text-align: center;
+    z-index: 1005;
+    color:white !important;
+    text-align: center;
+    display:flex;
+    width: 100%;
+    margin-top: 41vh;
+    font-family: 'League Spartan';
+    font-style: normal;
+    opacity: 1;
+    position: relative; /* Ajusta la posición absoluta */
+  }
+
+  .main-container .slider-container .container-images{
+    margin-top: 10%;
+  }
+  
+
+  .textos-card {
+    position: relative;
+    display: flex;
+    min-width: 290px;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    font-family: 'League Spartan';
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    color: #FFFFFF;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
+  }
+
+  .textos-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 33, 20);
+    opacity: 0.6;
+  }
+
+  .textos-card.opacidad-alternativa {
+    background-color: rgba(88, 33, 20);
+    content: "";
+    opacity: 0.96; /* Cambia la opacidad según sea necesario */
+  }
+
+  .subtituloEstancias{
+    position: relative;
+    width: 90%;
+    margin: 5%;
+    height: 7.5%;  
+    top: 2.5vh !important;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(18px, 3.4vh, 22.5px);
+    line-height: 100% !important;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    text-align: center;
+    color: #000000;
+    z-index: 1001;
+  }
+  .textoImagenText {
+    width: 80vw;
+    margin-top: 70%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    font-size: 22.5px !important;
+    text-align: center;
+    z-index: 1005;
+    color: #fff;
+    font-family: 'League Spartan';
+    font-style: normal;
+    position: relative;
+    font-weight: 300;
+    margin-block-end: 0px;
+  }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1023px) {
+    .main-container ul,
+    li {
+      list-style: none;
+      white-space: nowrap;
+    }
+    
+    /* Estilo para cada elemento de la lista */
+    .main-container li {
+      display: inline-block;
+      width: 90vw; /* Ancho igual al 80% del contenedor principal */
+      margin: auto;
+      max-width: 100vw; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+      white-space: normal; /* Restablecer el espaciado entre líneas */
+      vertical-align: top; /* Alinear las imágenes en la parte superior */
+    }
+    
+    /* Main container */
+    .main-container {
+      margin-top: 10%;
+      width: 90vw;
+      margin: auto;
+      height: 125vh;
+      display: block !important;
+    }
+  
+    /* dots carrusel */
+    .dots-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 6vh;  
+      width: 70vw; 
+      margin-left: 10vw;  
+    }
+    
+    .dot-container-item {
+        margin: 8px 3px;
+        cursor:pointer;
+        font-size: 20px;
+        width: 120px;
+        height: 2vh;
+        display: block;
+        text-align: center;
+    }
+  
+    .dot-container-item.active .boton {
+      width: 100%;
+      height: 100%;
+      top:0;
+      opacity: 1;
+      border-style: none;
+    }
+  
+    .dot-container-item .boton {
+      width: 100%;
+      height: 100%;
+      top:0;
+      background-color: #63301B;
+      opacity: 0.19;
+      transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+      border-style: none;
+      border-radius: 5px;
+    }
+    .subtituloEstancias {
+      position: relative;
+      width: 90%;
+      margin: 5%;
+      height: 7.5%;  
+      top: 5%;
+      font-family: 'League Spartan';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column; /* Alinear los elementos verticalmente */
+      align-items: center; /* Centrar horizontalmente los elementos */
+      text-align: center;
+      color: #000000;
+      z-index: 1001;
+    }
+    .saber-mas2 {
+      width: 120px;
+      height: 30px;
+      background-color: #fff;
+      margin-top: 10%;
+      border-style: none;
+      border-radius: 5px;
+      z-index: 1006;
+    }
+  
+    
+  
+    /* Contenedor de imágenes */
+    .container-images {
+      position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
+      width: 80%; /* Ancho completo del contenedor */
+      margin: auto;
+      height: 120%;
+      overflow: hidden; /* Si es necesario */
+      margin-top: 10%; /* Ajusta según sea necesario */
+      display: flex;
+    }
+    
+    .main-container .textos-card{
+      height: 80vh;
+      margin-right: 0px;
+      top:-89.5vh;
+    }
+  
+    .container-images ul li img{
+      margin-top: 0%;
+      width: 100%;
+      height: 80vh;
+      margin: auto;
+
+    }
+    
+    .container-images ul {
+      width: 80%;
+      margin: auto;
+      display: relative;
+      padding-inline-start: 0px;
+      margin-top: 10%;
+      border: none;
+    }
+    
+    /* Estilo para cada imagen */
+    .container-images img {
+      width: 100%; /* Ancho completo de la imagen */
+      height: 80vh; /* Altura automática para mantener la proporción */
+      margin-top: 12.5%;
+      display: block;
+
+      z-index: 1000;
+    }
+     
+    .tituloEstancias {
+      position: relative;
+      font-family: 'League Spartan';
+      top: 5%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 5vh;
+      line-height: 50px;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      color: #582114;
+      z-index: 1001;
+    }
+    
+    .original-text{
+      font-size: 5vh;
+      text-align: center;
+      z-index: 1005;
+      color:white !important;
+      text-align: center;
+      display:flex;
+      width: 100%;
+      margin-top: 50vh;
+      font-family: 'League Spartan';
+      font-style: normal;
+      opacity: 1;
+      position: relative; /* Ajusta la posición absoluta */
+    }
+  
+    .main-container .slider-container .container-images{
+      margin-top: 10%;
+    }
+    
+  
+    .textos-card {
+      position: relative;
+      display: flex;
+      min-width: 290px;
+      max-width: 80%;
+      margin: 0;
+      height: 100%;
+      font-family: 'League Spartan';
+      font-style: normal;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; /* Alinear los elementos verticalmente */
+      color: #FFFFFF;
+      top: 0;
+      left: 10%;
+      right: 0;
+      bottom: 0;
+      z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
+    }
+  
+    .textos-card::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(88, 33, 20);
+      opacity: 0.6;
+    }
+  
+    .textos-card.opacidad-alternativa {
+      background-color: rgba(88, 33, 20);
+      content: "";
+      opacity: 0.96; /* Cambia la opacidad según sea necesario */
+    }
+  
+  
+    .textoImagenText {
+      width: 50vw;
+      margin-top: 35vh;
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      font-size: 27px !important;
+      text-align: center;
+      z-index: 1005;
+      color: #fff;
+      font-family: 'League Spartan';
+      font-style: normal;
+      position: relative;
+      font-weight: 300;
+      margin-block-end: 0px;
+    }
+    }
+
+  @media only screen and ( max-width: 320px){   
+    /* Main container */
+    .main-container ul,
+    li {
+      list-style: none;
+      white-space: nowrap;
+    }
+    
+    /* Estilo para cada elemento de la lista */
+    .main-container li {
+      display: inline-block;
+      width: 90vw; /* Ancho igual al 80% del contenedor principal */
+      margin: auto;
+      max-width: 100vw; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+      white-space: normal; /* Restablecer el espaciado entre líneas */
+      vertical-align: top; /* Alinear las imágenes en la parte superior */
+    }
+    .main-container {
+      margin-top: 10%;
+      width: 90vw;
+      margin: auto;
+      height: 150vh !important;
+    }
+    .textoImagenText {
+      width: 80vw;
+      margin-top: 50% !important;
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      font-size: 18px !important;
+      text-align: center;
+      font-weight: 300;
+      z-index: 1005;
+      color: #fff;
+      font-family: 'League Spartan';
+      font-style: normal;
+      position: relative;
+      margin-block-end: 0px;
+    }
+    .main-container .textos-card{
+      height: 80vh;
+      margin-right: 0px;
+      top:clamp(-91vh, -92.65vh, -85.95vh) !important;
+    }
+    .tituloEstancias {
+      position: relative;
+      font-family: 'League Spartan';
+      top: clamp(18px, 3.4vh, 7.5vh);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 5vh;
+      line-height: 50px;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      color: #582114;
+      z-index: 1001;
+    }
+    
+    .original-text{
+      font-size: 5vh !important;
+      text-align: center;
+      z-index: 1005;
+      color:white !important;
+      text-align: center;
+      display:flex;
+      width: 100%;
+      margin-top: 41vh;
+      font-family: 'League Spartan';
+      font-style: normal;
+      opacity: 1;
+      position: relative; /* Ajusta la posición absoluta */
+    }
+    }
+
+    @media only screen and (min-width:1024px){
+      .main-container{
+        display: none;
+      }
+    }
+

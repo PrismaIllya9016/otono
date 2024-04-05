@@ -26,14 +26,14 @@
 
 }
 
-.descObjetivo{
+.descObjetivo {
     padding-left: 80px;
-    width: 926px;
-    height: 250px;
+    max-width: 926px;
+    max-height: 250px;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 30px; /* Tamaño predeterminado */
     line-height: 130%;
 
     display: flex;
@@ -41,9 +41,54 @@
     text-align: justify;
 
     color: #000000;
+}
+
+/* Para pantallas menores a 768px */
+@media (max-width: 768px) {
+    .descObjetivo {
+        font-size: 24px; /* Tamaño más pequeño para pantallas pequeñas */
+        padding: 16px;
+    }
+}
+
+/* Para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .descObjetivo {
+        font-size: 20px; /* Tamaño aún más pequeño para pantallas muy pequeñas */
+        
+    }
+
+    .nuestroObjetivo {
+        /* Nuestro objetivo */
+    display: flex;
+    justify-content: flex;
+    padding-left: 0px;
+    justify-content: center;
+    width: 100%;
+    
+    
+   
+}
+
+.lista li {
+    margin: 10px;
+    flex-shrink: 0;
+    width: 250px;
+    list-style: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 46px !important;
+    
+   
+    
+    
+    
+}
 
 
 }
+
 
 .lista li {
     margin: 10px;
