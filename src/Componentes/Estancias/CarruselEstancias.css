@@ -4,8 +4,6 @@
     list-style: none;
     white-space: nowrap;
   }
-  
-  /* Estilo para cada elemento de la lista */
   .main-container2 li {
     display: inline-block;
     width: 90vw; /* Ancho igual al 80% del contenedor principal */
@@ -14,22 +12,17 @@
     white-space: normal; /* Restablecer el espaciado entre líneas */
     vertical-align: top; /* Alinear las imágenes en la parte superior */
   }
-  
-  /* Main container */
-  
   .main-container2 {
     margin-top: 10%;
     width: 90vw;
     margin: auto;
-    height: 150vh;
+    height: 170vh;
   }
-  /* dots carrusel */
   .dots-container2 {
     display: flex;
     justify-content: space-around;
     margin-top: 6vh;   
-  }
-  
+  } 
   .dot-container-item2 {
     margin: 8px 3px;
     cursor:pointer;
@@ -39,7 +32,6 @@
     display: block;
     text-align: center;
   }
-
   .dot-container-item2.active .boton2 {
     width: 100%;
     height: 100%;
@@ -49,7 +41,6 @@
     transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
     border-style: none;
   }
-
   .dot-container-item2 .boton2 {
     width: 100%;
     height: 100%;
@@ -60,43 +51,38 @@
     border-style: none;
     border-radius: 5px;
   }
-
   .saber-mas2 {
     width: 120px;
     height: 30px;
-    background-color: #DD927A;
-    margin-top: 7.5%;
-    border-style: none;
-    color: #582114;
+    background-color: transparent;
+    font-family: 'League Spartan';
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 5% !important;
+    color: white;
+    border: 1px solid #fff; 
     border-radius: 10px;
     z-index: 1006;
   }
-
-  
-  /* Contenedor de imágenes */
   .container-images2 {
     position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
     width: 100%; /* Ancho completo del contenedor */
     margin: auto;
-    height: 120%;
+    height: 100%;
     overflow: hidden; /* Si es necesario */
     margin-top: 30%; /* Ajusta según sea necesario */
     display: flex;
   }
-  
-  
   .main-container2 .textos-card2{
     height: 80vh;
     margin-right: 0px;
     top:-91vh;
   }
-
   .container-images2 ul li img{
-    margin-top: 15%;
+    margin-top: 60%;
     width: 100%;
     height: 80vh;
   }
-  
   .container-images2 ul {
     width: 100%;
     margin: auto;
@@ -105,18 +91,14 @@
     margin-top: 10%;
     border: none;
   }
-  
   .nuevo-texto2 .texto-imagen-contenedor2{
     display: flex;
-  } 
-
+  }
   .textos-card.opacidad-alternativa {
       background-color: rgba(88, 33, 20);
       content: "";
       opacity: 0.96; /* Cambia la opacidad según sea necesario */
-    }
-
-  /* Estilo para cada imagen */
+  }
   .container-images2 img {
     width: 100%; /* Ancho completo de la imagen */
     height: 80vh; /* Altura automática para mantener la proporción */
@@ -125,15 +107,14 @@
     position: relative;
     z-index: 1000;
     transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-  }
-   
+  } 
   .tituloEstancias2 {
     position: relative;
     font-family: 'League Spartan';
-    top: clamp(18px, 3.4vh, 7.5vh);
+    top: 5%;
     font-style: normal;
     font-weight: 500;
-    font-size: 5vh;
+    font-size: 36px;
     line-height: 50px;
     text-align: center;
     width: 90%;
@@ -141,17 +122,16 @@
     color: #582114;
     z-index: 1001;
   }
-  
   .subtituloEstancias2 {
     position: relative;
-    width: 90%;
-    margin: 5%;
+    width: 100%;
+    margin: 0%;
     height: 7.5%;  
-    top: clamp(18px, 4vh, 8vh);
+    top: 7.5%;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(18px, 3.4vh, 22.5px);
+    font-size: 26px;
     line-height: 100%;
     display: flex;
     flex-direction: column; /* Alinear los elementos verticalmente */
@@ -175,7 +155,7 @@
     transition: opacity 0.3s ease; /* Transición suave de opacidad */
   }
   .original-text2{
-    font-size: 5vh;
+    font-size: 36px;
     text-align: center;
     z-index: 1005;
     color:#fff;
@@ -228,9 +208,8 @@
       right: 0;
       bottom: 0;
       z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-    }
-  
-    .textos-card2::before{
+  }
+  .textos-card2::before{
       content: "";
       position: absolute;
       top: 0;
@@ -239,19 +218,17 @@
       height: 100%;
       background-color: rgba(88, 33, 20);
       opacity: 0.6;
-    }
-
-    .textos-card2.opacidad-alternativa {
+  }
+  .textos-card2.opacidad-alternativa {
       background-color: rgba(88, 33, 20);
       content: "";
       opacity: 0.96; /* Cambia la opacidad según sea necesario */
-    }
-
+  }
   .textoImagenText2 {
     width: 80vw;
     font-weight: 500;
     height: 15vh;
-    margin-top: 115%;
+    margin-top: 95%;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
@@ -274,15 +251,15 @@
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(2vh, 2vh, 2.6vh);
-    margin-top: -70vh;
+    font-size: 22px;
+    margin-top: -45vh;
     width: 80vw;
   }
   .textoImagenText2 li {
     width: 80vw;
     font-size: 3vh;
     font-weight: 300;
-    line-height: 150%;
+    line-height: 120%;
   } 
   .textoImagenText2 ul li {
     margin-bottom: 1vh; /* Espacio entre elementos de la lista */
@@ -290,44 +267,36 @@
   .textoImagenText2 #h123 {
     font-weight: 500;
     margin-bottom: 3vh;
-    font-size: 18px;
+    font-size: 26px;
   }
+}
 
-  }
 @media only screen and ( min-width: 321px)  and (max-width: 600px) {
-   .main-container2 ul,
+  .main-container2 ul,
     li {
       list-style: none;
       white-space: nowrap;
-    }
-    
-    /* Estilo para cada elemento de la lista */
-    .main-container2 li {
+  }
+  .main-container2 li {
       display: inline-block;
       width: 90vw; /* Ancho igual al 80% del contenedor principal */
       margin: auto;
       max-width: 500px; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
       white-space: normal; /* Restablecer el espaciado entre líneas */
       vertical-align: top; /* Alinear las imágenes en la parte superior */
-    }
-
-
-    /* Main container */
-    
-    .main-container2 {
+  }
+  .main-container2 {
       margin-top: 10%;
       width: 90vw;
       margin: auto;
-      height: 130vh;
+      height: 140vh;
     }
-    /* dots carrusel */
-    .dots-container2 {
+  .dots-container2 {
       display: flex;
       justify-content: space-around;
       margin-top: 6vh;   
     }
-    
-    .dot-container-item2 {
+  .dot-container-item2 {
       margin: 8px 3px;
       cursor:pointer;
       font-size: 12px;
@@ -335,9 +304,8 @@
       height: 1.5vh;
       display: block;
       text-align: center;
-    }
-  
-    .dot-container-item2.active .boton2 {
+  }
+  .dot-container-item2.active .boton2 {
       width: 100%;
       height: 100%;
       top:0;
@@ -345,9 +313,8 @@
       opacity: 1;
       transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
       border-style: none;
-    }
-  
-    .dot-container-item2 .boton2 {
+  }
+  .dot-container-item2 .boton2 {
       width: 100%;
       height: 100%;
       top:0;
@@ -356,22 +323,21 @@
       transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
       border-style: none;
       border-radius: 5px;
-    }
-  
-    .saber-mas2 {
-      width: 120px;
-      height: 30px;
-      background-color: #DD927A;
-      margin-top: 10%;
-      color: #582114;
-      border-style: none;
-      border-radius: 10px;
-      z-index: 1006;
-    }
-
-    
-    /* Contenedor de imágenes */
-    .container-images2 {
+  }
+  .saber-mas2 {
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    font-family: 'League Spartan';
+    font-size: 15px;
+    font-style: normal;
+    margin-top: 10%;
+    color: white;
+    border: 1px solid #fff; /* Aquí está el borde blanco */
+    border-radius: 10px;
+    z-index: 1006;
+  }
+  .container-images2 {
       position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
       width: 100%; /* Ancho completo del contenedor */
       margin: auto;
@@ -379,42 +345,34 @@
       overflow: hidden; /* Si es necesario */
       margin-top: 30%; /* Ajusta según sea necesario */
       display: flex;
-    }
-    
-    
-    .main-container2 .textos-card2{
+  }
+  .main-container2 .textos-card2{
       height: 80vh;
       margin-right: 0px;
       top:clamp(-89.95vh, -89.65vh, -85.95vh);
-    }
-  
-    .container-images2 ul li img{
+  }
+  .container-images2 ul li img{
       margin-top: 15%;
       width: 100%;
       height: 80vh;
-    }
-    
-    .container-images2 ul {
+  }
+  .container-images2 ul {
       width: 100%;
       margin: auto;
       display: relative;
       padding-inline-start: 0px;
       margin-top: 10%;
       border: none;
-    }
-    
-    .nuevo-texto2 .texto-imagen-contenedor2{
+  }
+  .nuevo-texto2 .texto-imagen-contenedor2{
       display: flex;
-    } 
-
-    .textos-card.opacidad-alternativa {
-        background-color: rgba(88, 33, 20);
-        content: "";
-        opacity: 0.96; /* Cambia la opacidad según sea necesario */
-      }
-  
-    /* Estilo para cada imagen */
-    .container-images2 img {
+  } 
+  .textos-card.opacidad-alternativa {
+      background-color: rgba(88, 33, 20);
+      content: "";
+      opacity: 0.96; /* Cambia la opacidad según sea necesario */
+  }
+  .container-images2 img {
       width: 100%; /* Ancho completo de la imagen */
       height: 80vh; /* Altura automática para mantener la proporción */
       margin-top: 12.5%;
@@ -422,42 +380,38 @@
       position: relative;
       z-index: 1000;
       transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-    }
-     
-    .tituloEstancias2 {
+  }
+  .tituloEstancias2 {
       position: relative;
       font-family: 'League Spartan';
-      top: clamp(18px, 3.4vh, 7.5vh);
+      top: 5%;
       font-style: normal;
       font-weight: 500;
-      font-size: 5vh;
+      font-size: 36px;
       line-height: 50px;
       text-align: center;
       width: 90%;
       margin: auto;
       color: #582114;
       z-index: 1001;
-    }
-    
-    .subtituloEstancias2 {
+  }
+  .subtituloEstancias2 {
       position: relative;
-      width: 90%;
-      margin: 5%;
-      height: 7.5%;  
-      top: clamp(18px, 4vh, 8vh);
+      width: 100%;
+      top:7.5%;
       font-family: 'League Spartan';
       font-style: normal;
       font-weight: 300;
-      font-size: clamp(18px, 3.4vh, 22.5px);
-      line-height: 100%;
+      font-size: 26px;
+      line-height: 90%;
       display: flex;
       flex-direction: column; /* Alinear los elementos verticalmente */
       align-items: center; /* Centrar horizontalmente los elementos */
       text-align: center;
       color: #000000;
       z-index: 1001;
-    }
-    .texto-imagen-contenedor2 {
+  }
+  .texto-imagen-contenedor2 {
       position: absolute;
       min-width: 100px;
       width: 80vw;
@@ -470,9 +424,9 @@
       text-align: center;
       opacity: 1; /* Por defecto oculto */
       transition: opacity 0.3s ease; /* Transición suave de opacidad */
-    }
-    .original-text2{
-      font-size: 5vh;
+  }
+  .original-text2{
+      font-size: 36px;
       text-align: center;
       z-index: 1005;
       color:#fff;
@@ -484,11 +438,11 @@
       font-style: normal;
       opacity: 1;
       position: relative; /* Ajusta la posición absoluta */
-    }
-    .hola1232{
+  }
+  .hola1232{
       width: 80vw;
       margin: 20vw;
-      font-size: 25px;
+      font-size: 26px;
       text-align: center;
       color:#fff;
       font-weight: 500;
@@ -500,11 +454,11 @@
       font-family: 'League Spartan';
       font-style: normal;
       position: relative; /* Ajusta la posición absoluta */
-    }
-    .main-container2 .slider-container2 .container-images2{
+  }
+  .main-container2 .slider-container2 .container-images2{
       margin-top: 10%;
-    }
-    .textos-card2 {
+  }
+  .textos-card2 {
         position: relative;
         display: flex;
         min-width: 290px;
@@ -522,9 +476,8 @@
         right: 0;
         bottom: 0;
         z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-      }
-    
-      .textos-card2::before{
+  }
+  .textos-card2::before{
         content: "";
         position: absolute;
         top: 0;
@@ -533,15 +486,13 @@
         height: 100%;
         background-color: rgba(88, 33, 20);
         opacity: 0.6;
-      }
-
-      .textos-card2.opacidad-alternativa {
+  }
+  .textos-card2.opacidad-alternativa {
         background-color: rgba(88, 33, 20);
         content: "";
         opacity: 0.96; /* Cambia la opacidad según sea necesario */
-      }
-  
-      .textoImagenText2 {
+  }
+  .textoImagenText2 {
         width: 80vw;
         height: 15vh;
         margin-top: 55vh;
@@ -556,13 +507,13 @@
         font-style: normal;
         position: relative;
         margin-block-end: 0px;
-      }
-      .textoImagenText2 #h123 {
+  }
+  .textoImagenText2 #h123 {
         font-weight: 500;
         margin-bottom: 3vh;
         font-size: 26px;
-      }
-      .textoImagenText2 ul {
+  }
+  .textoImagenText2 ul {
         list-style-type: none; /* Quita los estilos de lista predeterminados */
         padding: 0; /* Quita el relleno predeterminado */
         display: flex; /* Usa flexbox */
@@ -575,52 +526,44 @@
         font-size: 30px;
         margin-top: -42.5vh;
         width: 80vw;
-      }
-      .textoImagenText2 li {
+  }
+  .textoImagenText2 li {
         width: 60vw;
         font-size: 20px;
         font-weight: 300;
         line-height:100%;
-      } 
-      .textoImagenText2 ul li {
+  } 
+  .textoImagenText2 ul li {
         margin-bottom: 2vh; /* Espacio entre elementos de la lista */
-      }
-
-    }
+  }
+}
   
 @media only screen and (min-width: 767px) and (max-width:1023px) {
-      .main-container2 ul,
-      li {
+  .main-container2 ul,
+  li {
         list-style: none;
         white-space: nowrap;
-      }
-      
-      /* Estilo para cada elemento de la lista */
-      .main-container2 li {
+  }
+  .main-container2 li {
         display: inline-block;
         width: 90vw; /* Ancho igual al 80% del contenedor principal */
         margin: auto;
         max-width: 100vw; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
         white-space: normal; /* Restablecer el espaciado entre líneas */
         vertical-align: top; /* Alinear las imágenes en la parte superior */
-      }
-      
-      /* Main container */
-      
-      .main-container2 {
+  }
+  .main-container2 {
         margin-top: 10%;
         width: 90vw;
         margin: auto;
-        height: 135vh;
-      }
-      /* dots carrusel */
-      .dots-container2 {
+        height: 125vh;
+  }
+  .dots-container2 {
         display: flex;
         justify-content: space-evenly;
         margin-top: 6vh;   
-      }
-      
-      .dot-container-item2 {
+  }
+  .dot-container-item2 {
         margin: 8px 3px;
         cursor:pointer;
         font-size: 20px;
@@ -628,86 +571,75 @@
         height: 2vh;
         display: block;
         text-align: center;
-      }
-    
-      .dot-container-item2.active .boton2 {
+  }
+  .dot-container-item2.active .boton2 {
         width: 100%;
-        height: 100%;
+        height: 80%;
         top:0;
         background-color: #63301B;
         opacity: 1;
         transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
         border-style: none;
-      }
-    
-      .dot-container-item2 .boton2 {
+  }
+  .dot-container-item2 .boton2 {
         width: 100%;
-        height: 100%;
+        height: 80%;
         top:0;
         background-color: #63301B;
         opacity: 0.19;
         transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
         border-style: none;
         border-radius: 5px;
-      }
-    
-      .saber-mas2 {
-        width: 180px;
-        height: 40px;
-        background-color: #DD927A;
-        margin-top: 7.5%;
-        font-size: medium;
-        border-style: none;
-        color: #582114;
-        border-radius: 10px;
-        z-index: 1006;
-      }
-  
-      /* Contenedor de imágenes */
-      .container-images2 {
+  }
+  .saber-mas2 {
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 7.5%;
+    font-size: medium;
+    color: white;
+    border: 1px solid #fff; 
+    border-radius: 10px;
+    z-index: 1006;
+  }
+  .container-images2 {
         position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
         width: 80%; /* Ancho completo del contenedor */
         margin: auto;
         height: 120%;
         overflow: hidden; /* Si es necesario */
         display: flex;
-      }
-      
-      
-      .main-container2 .textos-card2{
+  }
+  .main-container2 .textos-card2{
         height: 80vh;
         margin-right: 0px;
         top:-89.5vh;
-      }
-    
-      .container-images2 ul li img{
+  }
+  .container-images2 ul li img{
         margin-top: 0%;
         width: 100%;
         height: 80vh;
-      }
-      
-      
-      .container-images2 ul {
+  }
+  .container-images2 ul {
         width: 100%;
         margin: auto;
         display: relative;
         padding-inline-start: 0px;
         margin-top: 10%;
         border: none;
-      }
-      
-      .nuevo-texto2 .texto-imagen-contenedor2{
+  }
+  .nuevo-texto2 .texto-imagen-contenedor2{
         display: flex;
-      } 
-  
-      .textos-card.opacidad-alternativa {
+  } 
+  .textos-card.opacidad-alternativa {
           background-color: rgba(88, 33, 20);
           content: "";
           opacity: 0.96; /* Cambia la opacidad según sea necesario */
-        }
-    
-      /* Estilo para cada imagen */
-      .container-images2 img {
+  }
+  .container-images2 img {
         width: 100%; /* Ancho completo de la imagen */
         height: 80vh; /* Altura automática para mantener la proporción */
         margin-top: 12.5%;
@@ -715,33 +647,29 @@
         position: relative;
         z-index: 1000;
         transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-      }
-       
-      .tituloEstancias2 {
+  } 
+  .tituloEstancias2 {
         position: relative;
         font-family: 'League Spartan';
-        top: 5vh;
+        top: 5%;
         font-style: normal;
         font-weight: 500;
-        font-size: 5vh;
+        font-size: 36px;
         line-height: 50px;
         text-align: center;
         width: 90%;
         margin: auto;
         color: #582114;
         z-index: 1001;
-      }
-      
-      .subtituloEstancias2 {
+  }
+  .subtituloEstancias2 {
         position: relative;
-        width: 90%;
-        margin: 5%;
-        height: 7.5%;  
-        top: 5vh;
+        width: 100%; 
+        top: 7.5%;
         font-family: 'League Spartan';
         font-style: normal;
         font-weight: 300;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 100%;
         display: flex;
         flex-direction: column; /* Alinear los elementos verticalmente */
@@ -749,8 +677,8 @@
         text-align: center;
         color: #000000;
         z-index: 1001;
-      }
-      .texto-imagen-contenedor2 {
+  }
+  .texto-imagen-contenedor2 {
         position: absolute;
         min-width: 100px;
         width: 80vw;
@@ -763,9 +691,9 @@
         text-align: center;
         opacity: 1; /* Por defecto oculto */
         transition: opacity 0.3s ease; /* Transición suave de opacidad */
-      }
-      .original-text2{
-        font-size: 5vh;
+  }
+  .original-text2{
+        font-size: 36px;
         text-align: center;
         z-index: 1005;
         color:#fff;
@@ -777,8 +705,8 @@
         font-style: normal;
         opacity: 1;
         position: relative; /* Ajusta la posición absoluta */
-      }
-      .hola1232{
+  }
+  .hola1232{
         width: 80vw;
         margin: 20vw;
         font-size: 25px;
@@ -793,11 +721,11 @@
         font-family: 'League Spartan';
         font-style: normal;
         position: relative; /* Ajusta la posición absoluta */
-      }
-      .main-container2 .slider-container2 .container-images2{
-        margin-top: 10%;
-      }
-      .textos-card2 {
+  }
+  .main-container2 .slider-container2 .container-images2{
+        margin-top: 20%;
+  }
+  .textos-card2 {
           position: relative;
           display: flex;
           min-width: 290px;
@@ -815,9 +743,8 @@
           right: 0;
           bottom: 0;
           z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-        }
-      
-        .textos-card2::before{
+  }
+  .textos-card2::before{
           content: "";
           position: absolute;
           top: 0;
@@ -826,15 +753,13 @@
           height: 100%;
           background-color: rgba(88, 33, 20);
           opacity: 0.6;
-        }
-  
-        .textos-card2.opacidad-alternativa {
+  }
+  .textos-card2.opacidad-alternativa {
           background-color: rgba(88, 33, 20);
           content: "";
           opacity: 0.96; /* Cambia la opacidad según sea necesario */
-        }
-    
-      .textoImagenText2 {
+  }
+  .textoImagenText2 {
         width: 80vw;
         height: 15vh;
         margin-top: 55vh;
@@ -849,12 +774,8 @@
         font-style: normal;
         position: relative;
         margin-block-end: 0px;
-      }
-      .textoImagenText2 #h123 {
-        font-weight: 500;
-        margin-bottom: 3vh;
-      }
-      .textoImagenText2 ul {
+  }
+  .textoImagenText2 ul {
         list-style-type: none; /* Quita los estilos de lista predeterminados */
         padding: 0; /* Quita el relleno predeterminado */
         display: flex; /* Usa flexbox */
@@ -867,17 +788,23 @@
         font-size: 30px;
         margin-top: -42.5vh;
         width: 80vw;
-      }
-      .textoImagenText2 li {
+  }
+  .textoImagenText2 li {
         width: 50vw;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 300;
         line-height:100%;
-      } 
-      .textoImagenText2 ul li {
+  } 
+  .textoImagenText2 ul li {
         margin-bottom: 2vh; /* Espacio entre elementos de la lista */
-      }
-    }
+  }
+  .textoImagenText2 #h123 {
+        font-weight: 500;
+        margin-bottom: 3vh;
+        font-size: 36px;
+  } 
+}
+
 @media only screen and (min-width: 1024px){
       .main-container2{
         display: none;
@@ -885,4 +812,4 @@
       .main-container2 ul li{
         display: none;
       }
-    }
+}

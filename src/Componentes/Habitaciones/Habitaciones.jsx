@@ -5,8 +5,9 @@ import { Box, Container, Typography } from "@mui/material";
 function Habitaciones() {
   const [imagen, setImagen] = useState("public/_DSC7821 1.png");
   const [seleccionado, setSeleccionado] = useState("Estandar");
+  const [label, setLabel] = useState("Estandar");
   const [texto, setTexto] = useState(
-    "Incluye: Baño privado,Telefonía, Internet"
+    "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor"
   );
 
   //   PARALAX EFFECT
@@ -33,18 +34,20 @@ function Habitaciones() {
     {
       label: "Estandar",
       imgPath: "public/_DSC7821 1.png",
-      textoImagen: "Incluye: Baño privado,Telefonía, Internet",
+      textoImagen:
+        "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado.",
     },
     {
       label: "Mini suite",
       imgPath: "public/Habitaciones/minisuite_habitacion.jpg",
-      textoImagen: "Incluye: Baño privado,Telefonía, Internet, TV con cable",
+      textoImagen:
+        "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor",
     },
     {
       label: "Duplex",
       imgPath: "public/Habitaciones/duplex_habitacion.jpg",
       textoImagen:
-        "Incluye: Baño privado,Telefonía, Internet, TV con cable, Aire acondicionado, Ser hijo de dios",
+        "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor (compartida)",
     },
   ];
   // Función para manejar el click en un elemento
@@ -55,6 +58,7 @@ function Habitaciones() {
     if (imagen) {
       setImagen(imagen.imgPath);
       setTexto(imagen.textoImagen);
+      setLabel(imagen.label);
     }
   };
 
@@ -78,8 +82,8 @@ function Habitaciones() {
     return {
       borderTop:
         seleccionado === item
-          ? "8.5px solid rgba(99, 48, 27, 1)"
-          : "8.5px solid rgba(99, 48, 27, 0.19)",
+          ? "10.5px solid rgba(99, 48, 27, 1)"
+          : "10.5px solid rgba(99, 48, 27, 0.19)",
       width: "92px",
       display: "flex",
       alignItems: "center",
@@ -109,6 +113,22 @@ function Habitaciones() {
           Cada espacio refleja nuestro compromiso con la comodidad, seguridad y
           bienestar, por ellos contamos con 3 tipos de habitaciones.
         </h2>
+
+        <h3
+          style={{
+            fontSize: "36px",
+            color: "#D45F35",
+            fontFamily: "League Spartan",
+            fontStyle: "normal",
+            fontWeight: "500",
+            margin: "0",
+            marginBottom: "28px",
+            marginTop: "30px",
+          }}
+          className="TitulosCentradosMovile"
+        >
+          {label}
+        </h3>
 
         <Box
           className="cajaCompleta"
@@ -204,15 +224,11 @@ function Habitaciones() {
             <li
               style={obtenerEstiloBorderTop("Mini suite")}
               onClick={() => manejarClick("Mini suite")}
-            >
-              <a> </a>
-            </li>
+            ></li>
             <li
               style={obtenerEstiloBorderTop("Duplex")}
               onClick={() => manejarClick("Duplex")}
-            >
-              <a style={{ paddingRight: "16px" }}></a>
-            </li>
+            ></li>
           </ul>
         </Box>
       </Box>

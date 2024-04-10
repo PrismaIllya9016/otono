@@ -25,14 +25,14 @@ function Navbar() {
 
   const listenScrollEvent = () => {
     const scrollY = window.scrollY;
-    const opacity = Math.min(scrollY / 800, 0.96); // Ajusta para controlar la rapidez del cambio
+    const opacity = Math.min(scrollY / 800, 1); // Ajusta para controlar la rapidez del cambio
 
     if (scrollY > 50) {
       setBackground(`rgba(255, 255, 255, ${opacity})`); // Cambia el fondo gradualmente
       setColor(interpolateColor(scrollY, "#FFFFFF", "#582114", 800)); // Interpola el color de las letras
       if (opacity === 1) {
         // Aplica sombra cuando alcanza la opacidad máxima
-        setShadow("0px 4px 6px rgba(0, 0, 0, 0.4)");
+        setShadow("0px 4px 6px rgba(0, 0, 0, 0.3)");
       }
     } else {
       setBackground("transparent");
@@ -112,21 +112,19 @@ function Navbar() {
             Habitaciones
           </a>
         </li>
+
+        <a
+          className="navOpciones"
+          href="#Header"
+          onClick={handleNavLinkClick}
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          <img src="public/LogoSVG.svg" alt="Logo" className="navbarLogo" />
+        </a>
+
         <li>
           <a
-            href="#Header"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            <img
-              src="public/logo casa otno.png"
-              alt="Logo"
-              className="navbarLogo"
-            />
-          </a>
-        </li>
-        <li>
-          <a
+            className="navOpciones"
             href="#instalaciones"
             onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
@@ -136,6 +134,7 @@ function Navbar() {
         </li>
         <li>
           <a
+            className="navOpciones"
             href="#actividades"
             onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
@@ -145,6 +144,7 @@ function Navbar() {
         </li>
         <li>
           <a
+            className="navOpciones"
             href="#contacto"
             onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}

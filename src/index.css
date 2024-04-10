@@ -3,8 +3,7 @@ html, body {
     padding: 0;
     width: 100vw;
     height: 100vh;
- 
-        font-family: 'League Spartan';
+    font-family: 'League Spartan' !important;
    
       
 
@@ -15,7 +14,7 @@ html, body {
   #root {
     width: 100%;
     height: 100%;
-    
+    font-family: 'League Spartan' !important
   }
   
 

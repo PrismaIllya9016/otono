@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url('public/foto fondo.png'); /* Cambia esto por la ruta de tu imagen */
+    background-image: url('public/HeaderIMG/IMAGEN DE PORTADA.webp');
     background-size: cover;
     background-position: center;
     top: 0;
@@ -35,7 +35,7 @@
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 500;
-    font-size: 2.8vw; /* Adaptable al ancho de la pantalla, ajusta según necesites */
+    font-size: 54px; 
     line-height: 1.14; /* Basado en tu línea de 114% */
     display: flex;
     align-items: center;
@@ -45,19 +45,8 @@
     color: #FFFFFF;
   }
   
-  /* Media queries para tamaños de pantalla específicos */
-  @media (max-width: 768px) {
-    .texto1 {
-      font-size: 5.5vw; /* Tamaño de fuente más grande para dispositivos pequeños */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .texto1 {
-      font-size: 8.5vw; /* Aún más grande para pantallas muy pequeñas */
-     
-    }
-  }
+ 
+
   
 
   .texto2 {
@@ -84,7 +73,7 @@
   /* Media queries para ajustar el tamaño de fuente en dispositivos más pequeños */
   @media (max-width: 768px) {
     .texto2 {
-      font-size: 3.0vw; /* Aumenta el tamaño de fuente para mejorar la legibilidad */
+      font-size: 3rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad */
     }
   }
   

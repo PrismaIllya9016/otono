@@ -107,8 +107,10 @@ function Contacto() {
                   marginBottom: "30px",
                 }}
               >
-                En Casa Otoño, nos encantaría resolver todas tus preguntas. No
-                dudes en ponerte en contacto con nosotros.
+                <div className="textoCont" style={{ marginTop: "4px" }}>
+                  En Casa Otoño, nos encantaría resolver todas tus preguntas. No
+                  dudes en ponerte en contacto con nosotros.
+                </div>
               </div>
               <div
                 className="textoIcono"
@@ -122,10 +124,12 @@ function Contacto() {
               >
                 <img
                   className="iconoCon"
-                  src="public\Contacto\Capa_1.png"
+                  src="public\Contacto\Mail.svg"
                   alt=""
                 />
-                <div>servicios.casaotono@hotmail.com</div>
+                <div className="textoCont" style={{ marginTop: "4px" }}>
+                  servicios.casaotono@hotmail.com
+                </div>
               </div>
               <div
                 className="textoIcono"
@@ -140,11 +144,13 @@ function Contacto() {
                 }}
               >
                 <img
+                  id="telefonos"
                   className="iconoCon"
-                  src="public\Contacto\Vector.png"
+                  style={{ marginTop: "4px" }}
+                  src="public\Contacto\Telefono.svg"
                   alt=""
                 />
-                <div>
+                <div className="textoCont" style={{ marginTop: "4px" }}>
                   {" "}
                   667-721-52-03 <br /> 667-721-52-28
                 </div>
@@ -152,46 +158,97 @@ function Contacto() {
               <div
                 className="textoIcono"
                 style={{
+                  width: "100%",
+                  display: "flex",
+                  gap: "2.92%",
+                  marginLeft: "80px",
+                  marginBottom: "34px",
+                }}
+              >
+                <img
+                  id="whatsapp"
+                  className="iconoCon"
+                  src="public/whatapp.svg"
+                  alt=""
+                />
+                <div
+                  id="textoWhats"
+                  className="textoCont"
+                  style={{ marginTop: "6px" }}
+                >
+                  667 502 13 61
+                </div>
+              </div>
+              <div
+                className="textoIcono"
+                style={{
                   width: "auto",
                   display: "flex",
-                  gap: "4%",
+                  gap: "3.4%",
                   marginBottom: "34px",
                   marginLeft: "80px",
                 }}
               >
                 <img
+                  id="ubicacion"
+                  style={{ marginTop: "8px" }}
                   className="iconoCon"
-                  src="public\Contacto\Vector (2).png"
+                  src="public\Contacto\Ubicacion.svg"
                   alt=""
                 />
-                <div>
+                <div
+                  className="textoCont"
+                  style={{ marginTop: "4px", maxWidth: "80%" }}
+                >
                   Blvd. Pedro Infante 3002, Gasolinera del Valle, Las Flores,
                   80104 Culiacán Rosales, Sin.
                 </div>
               </div>
             </div>
 
-            <a
-              href="https://maps.app.goo.gl/8Ur6vmqnfXkhAJk97"
-              target="_blank"
-              style={{ textDecoration: "none" }}
-            >
-              <button
-                style={{ marginLeft: "80px", marginTop: "30px" }}
-                className="formuButton"
+            <div className="cajaComoLlegar">
+              <a
+                href="https://maps.app.goo.gl/8Ur6vmqnfXkhAJk97"
+                target="_blank"
+                style={{ textDecoration: "none" }}
               >
-                {" "}
-                Como llegar a casa Otoño
-              </button>
-            </a>
+                <button
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "16px",
+                    marginLeft: "80px",
+                    marginTop: "30px",
+                    fontWeight: 400,
+                    width: "343px",
+                    height: "44px",
+                    fontFamily: "League Spartan",
+                  }}
+                  className="formuButton"
+                >
+                  <img src="public\Contacto\Ubicacion 2.svg" alt="" />
+                  <div className="textoCont" style={{ marginTop: "4px" }}>
+                    Como llegar a casa Otoño
+                  </div>
+                </button>
+              </a>
+            </div>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Box style={{ padding: 20, textAlign: "center" }}>
+          <Box
+            className="Formulario"
+            style={{ padding: 20, textAlign: "center" }}
+          >
             <ThemeProvider theme={theme}>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <Box
-                  sx={{ paddingTop: "30px", display: "flex" }}
+                  className="CajaForm"
+                  sx={{
+                    paddingTop: "30px",
+                    display: "flex",
+                  }}
                   display="flex"
                   flexDirection="column"
                   gap={2}
@@ -199,6 +256,7 @@ function Contacto() {
                   maxheight={400}
                 >
                   <TextField
+                    fullWidth
                     label="Nombre"
                     {...register("input1", { required: true, maxLength: 30 })}
                     error={!!errors.input1}
@@ -209,6 +267,7 @@ function Contacto() {
                     }
                   />
                   <TextField
+                    fullWidth
                     label="Correo electrónico"
                     {...register("input2", { required: true, maxLength: 45 })}
                     error={!!errors.input2}
@@ -219,6 +278,7 @@ function Contacto() {
                     }
                   />
                   <TextField
+                    fullWidth
                     label="Teléfono"
                     {...register("input3", { required: true, maxLength: 10 })}
                     error={!!errors.input3}
@@ -229,6 +289,7 @@ function Contacto() {
                     }
                   />
                   <TextField
+                    fullWidth
                     sx={{ height: "fit-content" }}
                     label="Mensaje"
                     {...register("input4", { required: true, maxLength: 350 })}
@@ -240,11 +301,20 @@ function Contacto() {
                     }
                   />
                   <button
-                    style={{ marginTop: "14px" }}
+                    style={{
+                      marginTop: "41px",
+                      height: "44px",
+                      fontFamily: "League Spartan",
+                      fontWeight: "400",
+                    }}
                     className="formuButton"
                     type="submit"
                   >
-                    Enviar
+                    <div
+                      style={{ marginTop: "4px", fontFamily: "League Spartan" }}
+                    >
+                      Enviar
+                    </div>
                   </button>
                 </Box>
               </form>

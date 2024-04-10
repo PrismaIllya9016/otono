@@ -28,6 +28,7 @@ function App() {
         <Objetivo />
         <Estancias />
         <CarruselEstancias />
+
         <Habitaciones />
         <Instalaciones />
         <Actividades />

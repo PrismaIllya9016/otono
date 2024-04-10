@@ -19,13 +19,25 @@ const MobileMenu = () => {
   }, []);
 
   // Umbral de cambio en pixeles
-  const threshold = 300; // Ajusta este valor para controlar la rapidez del cambio de color
+  const threshold = 300;
 
-  // Calcular el cambio de color de blanco a negro basado en la posición de desplazamiento
-  const colorValue = Math.min((scrollPosition / threshold) * 255, 255);
-  const iconColor = `rgb(${255 - colorValue}, ${255 - colorValue}, ${
-    255 - colorValue
-  })`;
+  // Valores RGB para el color objetivo #6E5356
+  const targetRed = 110;
+  const targetGreen = 83;
+  const targetBlue = 86;
+
+  // Calcular la fracción del desplazamiento respecto al umbral
+  const fraction = Math.min(scrollPosition / threshold, 1);
+
+  // Interpolar los valores de color
+  const colorValueRed = 255 + (targetRed - 255) * fraction;
+  const colorValueGreen = 255 + (targetGreen - 255) * fraction;
+  const colorValueBlue = 255 + (targetBlue - 255) * fraction;
+
+  // Formatear el color como una cadena RGB
+  const iconColor = `rgb(${Math.round(colorValueRed)}, ${Math.round(
+    colorValueGreen
+  )}, ${Math.round(colorValueBlue)})`;
 
   const toggleMenu = () => {
     if (isOpen) {

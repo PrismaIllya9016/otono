@@ -1,5 +1,15 @@
 
+.NavbarWeb li{
+    color: inherit;
+    text-decoration: none;
+    animation: ease-in;
+}
 
+.NavbarWeb li:hover {
+    border-bottom: 3px solid #6E5356; 
+    border-radius: 5%;
+   
+}
 
 
 li{

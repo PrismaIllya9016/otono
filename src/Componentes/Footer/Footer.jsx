@@ -98,7 +98,16 @@ function Footer() {
             />
           </a>
           <a href="#Header" style={{ textDecoration: "none" }}>
-            <button className="footerbotones">Renta de Restaurante</button>
+            <button
+              style={{
+                fontFamily: "League Spartan",
+                fontWeight: 400,
+                fontSize: "22px",
+              }}
+              className="footerbotones"
+            >
+              Renta de Restaurante
+            </button>
           </a>
         </div>
       </div>

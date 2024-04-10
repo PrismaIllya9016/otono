@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.TitulosCentradosMovile{
+    display:none
+}
+
 
 
 .custom-shape-divider-bottom-1710877318 .shape-fill2 {
@@ -17,10 +21,26 @@
       display: none !important; 
 }
 
+.TitulosCentradosMovile{
+    display:inline;
+    font-size: 26px;
+    
+}
+
 .Habitaciones{
 
-    height: 128%;
+    height: 150%;
     
+}
+
+.Incluye{
+    width: 100% !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+   
 }
 
     .ImagenHabitacion{
@@ -40,7 +60,7 @@
     }
 
     .MenuMovil{
-    margin-top: 18px !important;
+    margin-top: 50px !important;
     margin-right: 48px !important;
  }
   }

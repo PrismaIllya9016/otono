@@ -6,10 +6,10 @@
       .TitulosCentrados{
         /* TITULOS CENTRADOS */
         height: 52px;
-        font-family: 'League Spartan';
+        font-family: 'League Spartan' !important;
         font-style: normal;
         font-weight: 500;
-        font-size: 40px;
+        font-size: 36px;
         line-height: 143%;
         display: flex;
         align-items: center;
@@ -24,10 +24,10 @@
       
      
       max-height: 250px;
-      font-family: 'League Spartan';
+      font-family: 'League Spartan' !important;
       font-style: normal;
       font-weight: 300;
-      font-size: 30px; /* Tamaño predeterminado */
+      font-size: 26px; /* Tamaño predeterminado */
       line-height: 130%;
       text-align: "center";
       display: flex;
