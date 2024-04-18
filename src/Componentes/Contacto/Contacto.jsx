@@ -112,127 +112,133 @@ function Contacto() {
                   dudes en ponerte en contacto con nosotros.
                 </div>
               </div>
-              <div
-                className="textoIcono"
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  gap: "2.92%",
-                  marginLeft: "80px",
-                  marginBottom: "34px",
-                }}
-              >
-                <img
-                  className="iconoCon"
-                  src="public\Contacto\Mail.svg"
-                  alt=""
-                />
-                <div className="textoCont" style={{ marginTop: "4px" }}>
-                  servicios.casaotono@hotmail.com
-                </div>
-              </div>
-              <div
-                className="textoIcono"
-                style={{
-                  width: "100%",
-                  height: "40px",
-                  display: "flex",
-                  alignItems: "center",
-                  marginLeft: "80px",
-                  marginBottom: "34px",
-                  gap: "2.92%",
-                }}
-              >
-                <img
-                  id="telefonos"
-                  className="iconoCon"
-                  style={{ marginTop: "4px" }}
-                  src="public\Contacto\Telefono.svg"
-                  alt=""
-                />
-                <div className="textoCont" style={{ marginTop: "4px" }}>
-                  {" "}
-                  667-721-52-03 <br /> 667-721-52-28
-                </div>
-              </div>
-              <div
-                className="textoIcono"
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  gap: "2.92%",
-                  marginLeft: "80px",
-                  marginBottom: "34px",
-                }}
-              >
-                <img
-                  id="whatsapp"
-                  className="iconoCon"
-                  src="public/whatapp.svg"
-                  alt=""
-                />
+              <div className="cale123">
                 <div
-                  id="textoWhats"
-                  className="textoCont"
-                  style={{ marginTop: "6px" }}
-                >
-                  667 502 13 61
-                </div>
-              </div>
-              <div
-                className="textoIcono"
-                style={{
-                  width: "auto",
-                  display: "flex",
-                  gap: "3.4%",
-                  marginBottom: "34px",
-                  marginLeft: "80px",
-                }}
-              >
-                <img
-                  id="ubicacion"
-                  style={{ marginTop: "8px" }}
-                  className="iconoCon"
-                  src="public\Contacto\Ubicacion.svg"
-                  alt=""
-                />
-                <div
-                  className="textoCont"
-                  style={{ marginTop: "4px", maxWidth: "80%" }}
-                >
-                  Blvd. Pedro Infante 3002, Gasolinera del Valle, Las Flores,
-                  80104 Culiacán Rosales, Sin.
-                </div>
-              </div>
-            </div>
-
-            <div className="cajaComoLlegar">
-              <a
-                href="https://maps.app.goo.gl/8Ur6vmqnfXkhAJk97"
-                target="_blank"
-                style={{ textDecoration: "none" }}
-              >
-                <button
+                  className="textoIcono"
                   style={{
+                    width: "100%",
+                    display: "flex",
+                    gap: "2.92%",
+                    marginLeft: "80px",
+                    marginBottom: "34px",
+                  }}
+                >
+                  <img
+                    className="iconoCon"
+                    src="public\Contacto\Mail.svg"
+                    alt=""
+                  />
+                  <div className="textoCont" style={{ marginTop: "4px" }}>
+                    servicios.casaotono@hotmail.com
+                  </div>
+                </div>
+                <div
+                  className="textoIcono"
+                  style={{
+                    width: "100%",
+                    height: "40px",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
-                    gap: "16px",
                     marginLeft: "80px",
-                    marginTop: "30px",
-                    fontWeight: 400,
-                    width: "343px",
-                    height: "44px",
-                    fontFamily: "League Spartan",
+                    marginBottom: "34px",
+                    gap: "2.92%",
                   }}
-                  className="formuButton"
                 >
-                  <img src="public\Contacto\Ubicacion 2.svg" alt="" />
+                  <img
+                    id="telefonos"
+                    className="iconoCon"
+                    style={{ marginTop: "4px" }}
+                    src="public\Contacto\Telefono.svg"
+                    alt=""
+                  />
                   <div className="textoCont" style={{ marginTop: "4px" }}>
-                    Como llegar a casa Otoño
+                    {" "}
+                    667-721-52-03 <br /> 667-721-52-28
                   </div>
-                </button>
-              </a>
+                </div>
+                <div
+                  className="textoIcono"
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    gap: "2.92%",
+                    marginLeft: "80px",
+                    marginBottom: "34px",
+                  }}
+                >
+                  <img
+                    id="whatsapp"
+                    className="iconoCon"
+                    src="public/whatapp.svg"
+                    alt=""
+                  />
+                  <div
+                    id="textoWhats"
+                    className="textoCont"
+                    style={{ marginTop: "6px" }}
+                  >
+                    667 502 13 61
+                  </div>
+                </div>
+                <div
+                  className="textoIcono"
+                  style={{
+                    width: "auto",
+                    display: "flex",
+                    gap: "3.4%",
+                    marginBottom: "34px",
+                    marginLeft: "80px",
+                  }}
+                >
+                  <img
+                    id="ubicacion"
+                    style={{ marginTop: "8px" }}
+                    className="iconoCon"
+                    src="public\Contacto\Ubicacion.svg"
+                    alt=""
+                  />
+                  <div
+                    className="textoCont"
+                    style={{ marginTop: "4px", maxWidth: "80%" }}
+                  >
+                    Blvd. Pedro Infante 3002, Gasolinera del Valle, Las Flores,
+                    80104 Culiacán Rosales, Sin.
+                  </div>
+                </div>
+
+                <div className="cajaComoLlegar">
+                  <a
+                    href="https://maps.app.goo.gl/8Ur6vmqnfXkhAJk97"
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <button
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "16px",
+                        marginLeft: "80px",
+                        marginTop: "30px",
+                        fontWeight: 400,
+                        width: "343px",
+                        height: "44px",
+                        fontFamily: "League Spartan",
+                      }}
+                      className="formuButton"
+                    >
+                      <img src="public\Contacto\Ubicacion 2.svg" alt="" />
+                      <div
+                        className="textoCont"
+                        id="btn_enviar"
+                        style={{ marginTop: "4px" }}
+                      >
+                        Como llegar a casa Otoño
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              </div>
             </div>
           </Box>
         </Grid>

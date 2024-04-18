@@ -57,13 +57,13 @@
     }
   .subtituloActividades {
     position: absolute;
-    width: 80%;
+    width: 70%;
     top:17%;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.625rem;
     line-height: 130%;
     display: flex;
 
@@ -76,7 +76,7 @@
   top: 5vh;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2.5rem;
   line-height: 50px;
   color: #582114;
 
@@ -98,34 +98,41 @@
     }
   .imagenActividades .original-text{
       position: absolute;
-      font-size: 30px !important;
-      top: 50%; /* Ajusta la posición vertical según tus necesidades */
+      font-size: 1.5rem !important;
+      top: 60%; /* Ajusta la posición vertical según tus necesidades */
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       z-index: 999;
       padding: 10px;
       text-align: center;
-      width: 80%; /* Ancho del texto */
+      width: 100%; /* Ancho del texto */
       transition: opacity 0.3s ease; /* Transición suave de opacidad */
       opacity: 1; /* Establece la opacidad predeterminada */
     }
+    #imagenActividades4 .original-text{
+      left: 80%;
+    }
   .imagenActividades:hover .original-text{
       opacity: 1; /* Establece la opacidad a 1 al hacer hover */
-      top: 10%;
-      font-size: 26px !important; 
-      width: 95%;
-      
+      top: 17.5%;
+      font-size: 1.4rem !important; 
+      width: 100%;
+    }
+
+    #imagenActividades4:hover .original-text{
+      left: 80%;
     }
     .imagenActividades .hola123{
       position: absolute;
-      font-size: 22px;
+      font-size: 1.25rem;
       top: 20%; /* Ajusta la posición vertical según tus necesidades */
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       z-index: 999;
       padding: 10px;
+      line-height: 130%;
       text-align: center;
       width: 90%; /* Ancho del texto */
       transition: opacity 0.3s ease; /* Transición suave de opacidad */
@@ -133,8 +140,8 @@
     }
     .imagenActividades:hover .hola123{
       opacity: 1;
-      top: 15vh
-
+      top: 15vh;
+      line-height: 120% !important;
     }
 }
 
@@ -185,13 +192,13 @@
     }
   .subtituloActividades {
     position: absolute;
-    width: 80%;
+    width: 60%;
     top:17%;
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.625rem;
     line-height: 130%;
     display: flex;
 
@@ -204,7 +211,7 @@
   top: 5vh;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2.5rem;
   line-height: 50px;
   color: #582114;
 
@@ -220,13 +227,14 @@
       opacity: 0.7; /* Opacidad del color de fondo */
       z-index: 99; /* Mueve el pseudo-elemento detrás de las imágenes */
       transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+      transform: scaleY(-1);
     }
   .imagenActividades:hover::before {
-      opacity: 0.92; /* Opacidad del color de fondo al hacer hover */
+      opacity: 0.96; /* Opacidad del color de fondo al hacer hover */
     }
   .imagenActividades .original-text{
       position: absolute;
-      font-size: 30px !important;
+      font-size: 2rem !important;
       top: 60%; /* Ajusta la posición vertical según tus necesidades */
       left: 50%;
       transform: translate(-50%, -50%);
@@ -238,24 +246,33 @@
       transition: opacity 0.3s ease; /* Transición suave de opacidad */
       opacity: 1; /* Establece la opacidad predeterminada */
     }
+    #imagenActividades4 .original-text{
+      left: 70%;
+    }
+
   .imagenActividades:hover .original-text{
       opacity: 1; /* Establece la opacidad a 1 al hacer hover */
-      top: 25%;
-      font-size: 26px !important; 
+      top: 20%;
+      font-size: 1.625rem !important; 
       width: 95%;
-      
     }
+    
+    #imagenActividades4:hover .original-text{
+      left: 80%
+    }
+
     .imagenActividades .hola123{
       position: absolute;
-      font-size: 22px;
+      font-size: 1.4rem;
       top: 35% !important; /* Ajusta la posición vertical según tus necesidades */
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       z-index: 999;
       padding: 10px;
+      line-height: 1.1;
       text-align: center;
-      width: 90%; /* Ancho del texto */
+      width: 80%; /* Ancho del texto */
       transition: opacity 0.3s ease; /* Transición suave de opacidad */
       opacity: 0; /* Establece la opacidad predeterminada */
     }
@@ -265,3 +282,4 @@
 
     }
 }
+

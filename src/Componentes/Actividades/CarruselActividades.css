@@ -1,4 +1,278 @@
-@media only screen and ( min-width: 321px)  and (max-width: 600px) {
+@media only screen and ( max-width: 320px){   
+  .main-container ul,
+  li {
+    list-style: none;
+    white-space: nowrap;
+  }
+  .main-container li {
+    display: inline-block;
+    width: 90vw; /* Ancho igual al 80% del contenedor principal */
+    margin: auto;
+    max-width: 100vw; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+    white-space: normal; /* Restablecer el espaciado entre líneas */
+    vertical-align: top; /* Alinear las imágenes en la parte superior */
+  }
+}
+.main-container {
+  margin-top: 10%;
+  width: 90vw;
+  margin: auto;
+  height: 170vh ;
+}
+.textoImagenText {
+  width: 80vw;
+  margin-top: 50% ;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-size: 18px ;
+  text-align: center;
+  font-weight: 300;
+  z-index: 1005;
+  color: #fff;
+  font-family: 'League Spartan';
+  font-style: normal;
+  position: relative;
+  margin-block-end: 0px;
+}
+.main-container .textos-card{
+  height: 80vh;
+  margin-right: 0px;
+  top:clamp(-91vh, -92.65vh, -85.95vh) ;
+}
+.tituloEstancias {
+  position: relative;
+  font-family: 'League Spartan';
+  top: 2.5%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 50px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  color: #582114;
+  z-index: 1001;
+}
+.original-text{
+  font-size: 1.5rem ;
+  text-align: center;
+  z-index: 1005;
+  color:white ;
+  text-align: center;
+  display:flex;
+  width: 100%;
+  margin-top: 41vh;
+  font-family: 'League Spartan';
+  font-style: normal;
+  opacity: 1;
+  position: relative; /* Ajusta la posición absoluta */
+}
+.dots-container {
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 6vh;   
+}
+.dot-container-item {
+ margin: 8px 3px;
+ cursor:pointer;
+ font-size: 12px;
+ width: 80px;
+ height: 1.5vh;
+ display: block;
+ text-align: center;
+}
+.dot-container-item.active .boton {
+ width: 100%;
+ height: 100%;
+ top:0;
+ opacity: 1;
+ border-style: none;
+}
+.dot-container-item .boton {
+ width: 100%;
+ height: 100%;
+ top:0;
+ background-color: #63301B;
+ opacity: 0.19;
+ transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+ border-style: none;
+ border-radius: 5px;
+}
+.saber-mas2 {
+width: 120px;
+height: 30px;
+background-color: transparent;
+font-family: 'League Spartan';
+font-style: normal;
+font-size: 15px;
+margin-top: 7.5%;
+color: white;
+border: 1px solid #fff; 
+border-radius: 10px;
+z-index: 1006;
+}
+.container-images {
+ position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
+ width: 100%; /* Ancho completo del contenedor */
+ margin: auto;
+ height: 120%;
+ overflow: hidden; /* Si es necesario */
+ margin-top: clamp(4vh, 10%, 15%); /* Ajusta según sea necesario */
+ display: flex;
+}
+.main-container .textos-card{
+ height: 80vh;
+ margin-right: 0px;
+ top:-90.5vh;
+}
+.container-images ul li img{
+ margin-top: 10%;
+}
+.container-images ul {
+ width: 100%;
+ margin: auto;
+ display: relative;
+ padding-inline-start: 0px;
+ margin-top: 10%;
+ border: none;
+}
+.container-images img {
+ width: 100%; /* Ancho completo de la imagen */
+ height: 80vh; /* Altura automática para mantener la proporción */
+ margin-top: 12.5%;
+ display: block;
+ position: relative;
+ z-index: 1000;
+}
+.main-container .slider-container .container-images{
+ margin-top: 10%;
+}
+.textos-card {
+ position: relative;
+ display: flex;
+ min-width: 290px;
+ max-width: 100%;
+ margin: auto;
+ height: 100%;
+ font-family: 'League Spartan';
+ font-style: normal;
+ align-items: center;
+ text-align: center;
+ flex-direction: column; /* Alinear los elementos verticalmente */
+ color: #FFFFFF;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
+}
+.textos-card::before{
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(88, 33, 20);
+ opacity: 0.6;
+}
+.textos-card.opacidad-alternativa {
+ background-color: rgba(88, 33, 20);
+ content: "";
+ opacity: 0.96; /* Cambia la opacidad según sea necesario */
+}
+.subtituloEstancias{
+ position: relative;
+ width: 95%;
+ margin: 2.5%; 
+ top: 5% ;
+ font-family: 'League Spartan';
+ font-style: normal;
+ font-weight: 300;
+ font-size: 1.25rem;
+ line-height: 130%;
+ display: flex;
+ flex-direction: column; /* Alinear los elementos verticalmente */
+ align-items: center; /* Centrar horizontalmente los elementos */
+ text-align: center;
+ color: #000000;
+ z-index: 1001;
+}
+.textoImagenText {
+ width: 80vw;
+ margin-top:45%;
+ display: flex;
+ justify-content: center; /* Centra horizontalmente */
+ align-items: center; /* Centra verticalmente */
+ font-size: 1.25rem;
+ line-height: 1.1;
+ text-align: center;
+ z-index: 1005;
+ color: #fff;
+ font-family: 'League Spartan';
+ font-style: normal;
+ position: relative;
+ font-weight: 300;
+ margin-block-end: 0px;
+}
+@media only screen and (min-width:321px) and (max-width:360px) {
+  .main-container ul,
+  li {
+    list-style: none;
+    white-space: nowrap;
+  }
+ .main-container li {
+    display: inline-block;
+    width: 90vw; /* Ancho igual al 80% del contenedor principal */
+    margin: auto;
+    max-width: 500px; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+    white-space: normal; /* Restablecer el espaciado entre líneas */
+    vertical-align: top; /* Alinear las imágenes en la parte superior */
+  }
+  .main-container {
+    height: 150vh ;
+  }
+  .saber-mas2 {
+    font-size: 15px;
+    margin-top: 10%;
+  }
+  .container-images {
+    height: 100%;
+    margin-top: -10%; /* Ajusta según sea necesario */
+  }
+  .tituloEstancias {
+    top: 5%;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .original-text{
+    font-size: 2rem !important;
+  }
+  .subtituloEstancias{
+    width: 100%;
+    top: 7.5% ;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 130%;
+  }
+  .textoImagenText {
+    font-size: 1.25rem ;
+    line-height: 1.1;
+  }
+  .dots-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6vh;   
+   }
+   .main-container .slider-container .container-images{
+    margin-top: 15%;
+   }
+  .textos-card {
+    top:-90vh !important;
+  }
+}
+@media only screen and ( min-width: 361px)  and (max-width: 600px) {
  .main-container ul,
   li {
     list-style: none;
@@ -13,188 +287,47 @@
     vertical-align: top; /* Alinear las imágenes en la parte superior */
   }
   .main-container {
-    margin-top: 10%;
-    width: 90vw;
-    margin: auto;
     height: 145vh ;
+  }
+  .saber-mas2 {
+    font-size: 15px;
+    margin-top: 10%;
+  }
+  .container-images {
+    height: 100%;
+    margin-top: -10%; /* Ajusta según sea necesario */
+  }
+  .tituloEstancias {
+    top: 5%;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .original-text{
+    font-size: 2rem !important;
+  }
+  .subtituloEstancias{
+    width: 100%;
+    top: 7.5% ;
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 130%;
+  }
+  .textoImagenText {
+    font-size: 1.25rem ;
+    line-height: 1.1;
   }
   .dots-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 6vh;   
-  }
-  .dot-container-item {
-    margin: 8px 3px;
-    cursor:pointer;
-    font-size: 12px;
-    width: 80px;
-    height: 1.5vh;
-    display: block;
-    text-align: center;
-  }
-  .dot-container-item.active .boton {
-    width: 100%;
-    height: 100%;
-    top:0;
-    opacity: 1;
-    border-style: none;
-  }
-  .dot-container-item .boton {
-    width: 100%;
-    height: 100%;
-    top:0;
-    background-color: #63301B;
-    opacity: 0.19;
-    transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-    border-style: none;
-    border-radius: 5px;
-  }
-  .saber-mas2 {
-    width: 120px;
-    height: 30px;
-    background-color: transparent;
-    font-family: 'League Spartan';
-    font-size: 15px;
-    font-style: normal;
-    margin-top: 10%;
-    color: white;
-    border: 1px solid #fff; /* Aquí está el borde blanco */
-    border-radius: 10px;
-    z-index: 1006;
-  }
-  .container-images {
-    position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
-    width: 100%; /* Ancho completo del contenedor */
-    margin: auto;
-    height: 100%;
-    overflow: hidden; /* Si es necesario */
-    margin-top: -10% !important; /* Ajusta según sea necesario */
-    display: flex;
-  }
-  .main-container .textos-card{
-    height: 80vh;
-    margin-right: 0px;
-    top:clamp(-89.95vh, -89.65vh, -85.95vh);
-  }
-  .container-images ul li img{
-    margin-top: 20%;
-    width: 100%;
-    height: 80vh;
-  }
-  .container-images ul {
-    width: 100%;
-    margin: auto;
-    display: relative;
-    padding-inline-start: 0px;
-    margin-top: 10%;
-    border: none;
-  }
-  .container-images img {
-    width: 100%; /* Ancho completo de la imagen */
-    height: 80vh; /* Altura automática para mantener la proporción */
-    margin-top: 12.5%;
-    display: block;
-    position: relative;
-    z-index: 1000;
-  }
-  .tituloEstancias {
-    position: relative;
-    font-family: 'League Spartan';
-    top: 5%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 50px;
-    text-align: center;
-    width: 90%;
-    margin: auto;
-    color: #582114;
-    z-index: 1001;
-  }
-  .original-text{
-    font-size: 36px !important;
-    text-align: center;
-    z-index: 1005;
-    color:white !important;
-    text-align: center;
-    display:flex;
-    width: 100%;
-    margin-top: 41vh;
-    font-family: 'League Spartan';
-    font-style: normal;
-    opacity: 1;
-    position: relative; /* Ajusta la posición absoluta */
-  }
-  .main-container .slider-container .container-images{
-    margin-top: 10%;
-  }
+   }
+   .main-container .slider-container .container-images{
+    margin-top: 15%;
+   }
   .textos-card {
-    position: relative;
-    display: flex;
-    min-width: 290px;
-    max-width: 100%;
-    margin: auto;
-    height: 100%;
-    font-family: 'League Spartan';
-    font-style: normal;
-    align-items: center;
-    text-align: center;
-    flex-direction: column; /* Alinear los elementos verticalmente */
-    color: #FFFFFF;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-  }
-  .textos-card::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(88, 33, 20);
-    opacity: 0.6;
-  }
-  .textos-card.opacidad-alternativa {
-    background-color: rgba(88, 33, 20);
-    content: "";
-    opacity: 0.96; /* Cambia la opacidad según sea necesario */
-  }
-  .subtituloEstancias{
-    position: relative;
-    width: 100%;
-    top: 5% !important;
-    font-family: 'League Spartan';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    display: flex;
-    flex-direction: column; /* Alinear los elementos verticalmente */
-    align-items: center; /* Centrar horizontalmente los elementos */
-    text-align: center;
-    color: #000000;
-    z-index: 1001;
-  }
-  .textoImagenText {
-    width: 80vw;
-    margin-top: 70%;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    font-size: 22px !important;
-    text-align: center;
-    z-index: 1005;
-    color: #fff;
-    font-family: 'League Spartan';
-    font-style: normal;
-    position: relative;
-    font-weight: 300;
-    margin-block-end: 0px;
+    top:-62% !important;
   }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
     .main-container ul,
     li {
@@ -210,420 +343,72 @@
       vertical-align: top; /* Alinear las imágenes en la parte superior */
     }
     .main-container {
-      margin-top: 10%;
-      width: 90vw;
-      margin: auto;
       height: 125vh;
-      display: block !important;
     }
     .dots-container {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 6vh;  
       width: 70vw; 
       margin-left: 10vw;  
     }
     .dot-container-item {
-        margin: 8px 3px;
-        cursor:pointer;
         font-size: 20px;
         width: 120px;
         height: 2vh;
-        display: block;
-        text-align: center;
     }
     .dot-container-item.active .boton {
-      width: 100%;
-      height: 80%;
-      top:0;
-      opacity: 1;
-      border-style: none;
+      height: 50%;
     }
     .dot-container-item .boton {
-      width: 100%;
-      height: 80%;
-      top:0;
-      background-color: #63301B;
-      opacity: 0.19;
-      transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-      border-style: none;
-      border-radius: 5px;
+      height: 50%;
     }
     .subtituloEstancias {
-      position: relative;
       width: 90%;
       margin: 5%;
       height: 7.5%;  
       top: 5%;
-      font-family: 'League Spartan';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 26px;
-      line-height: 100%;
-      display: flex;
-      flex-direction: column; /* Alinear los elementos verticalmente */
-      align-items: center; /* Centrar horizontalmente los elementos */
-      text-align: center;
-      color: #000000;
-      z-index: 1001;
+      font-size: 1.625rem;
+      line-height: 130%;
     }
     .saber-mas2 {
-      width: 150px !important;
+      width: 150px;
       height: 40px;
-      background-color: transparent;
-      margin-top: 7.5%;
-      border-style: none;
-      color: white;
-      border: 1px solid #fff; 
-      border-radius: 10px;
-      font-family: 'League Spartan';
-      font-style: normal;
       font-size: 18px;
-      z-index: 1006;
     }
     .container-images {
-      position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
       width: 80%; /* Ancho completo del contenedor */
-      margin: auto;
-      height: 120%;
-      overflow: hidden; /* Si es necesario */
       margin-top: 10%; /* Ajusta según sea necesario */
-      display: flex;
     }   
     .main-container .textos-card{
-      height: 80vh;
-      margin-right: 0px;
       top:-89.5vh;
     }
     .container-images ul li img{
       margin-top: 0%;
-      width: 100%;
-      height: 80vh;
-      margin: auto;
-
     }   
     .container-images ul {
       width: 80%;
-      margin: auto;
-      display: relative;
-      padding-inline-start: 0px;
-      margin-top: 10%;
-      border: none;
     }
-    .container-images img {
-      width: 100%; /* Ancho completo de la imagen */
-      height: 80vh; /* Altura automática para mantener la proporción */
-      margin-top: 12.5%;
-      display: block;
-
-      z-index: 1000;
-    } 
     .tituloEstancias {
-      position: relative;
-      font-family: 'League Spartan';
-      font-style: normal;
       top: 5%;
-      font-weight: 500;
-      font-size: 36px;
-      line-height: 50px;
-      text-align: center;
-      width: 90%;
-      margin: auto;
-      color: #582114;
-      z-index: 1001;
+      font-size: 2.5rem;
     }
     .original-text{
-      font-size: 36px;
-      text-align: center;
-      z-index: 1005;
-      color:white !important;
-      text-align: center;
-      display:flex;
-      width: 100%;
+      font-size: 2.25rem;
       margin-top: 50vh;
-      font-family: 'League Spartan';
-      font-style: normal;
-      opacity: 1;
-      position: relative; /* Ajusta la posición absoluta */
-    }
-    .main-container .slider-container .container-images{
-      margin-top: 10%;
     }
     .textos-card {
-      position: relative;
-      display: flex;
-      min-width: 290px;
       max-width: 80%;
       margin: 0;
       height: 100%;
-      font-family: 'League Spartan';
-      font-style: normal;
-      align-items: center;
-      text-align: center;
-      flex-direction: column; /* Alinear los elementos verticalmente */
-      color: #FFFFFF;
-      top: 0;
       left: 10%;
-      right: 0;
-      bottom: 0;
-      z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-    }
-    .textos-card::before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(88, 33, 20);
-      opacity: 0.6;
-    }
-    .textos-card.opacidad-alternativa {
-      background-color: rgba(88, 33, 20);
-      content: "";
-      opacity: 0.96; /* Cambia la opacidad según sea necesario */
     }
     .textoImagenText {
       width: 50vw;
       margin-top: 35vh;
-      display: flex;
-      justify-content: center; /* Centra horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      font-size: 26px !important;
-      text-align: center;
-      z-index: 1005;
-      color: #fff;
-      font-family: 'League Spartan';
-      font-style: normal;
-      position: relative;
-      font-weight: 300;
-      margin-block-end: 0px;
+      font-size: 26px;
+      line-height: 1.1;
     }
 }
-
-@media only screen and ( max-width: 320px){   
-    .main-container ul,
-    li {
-      list-style: none;
-      white-space: nowrap;
-    }
-    .main-container li {
-      display: inline-block;
-      width: 90vw; /* Ancho igual al 80% del contenedor principal */
-      margin: auto;
-      max-width: 100vw; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
-      white-space: normal; /* Restablecer el espaciado entre líneas */
-      vertical-align: top; /* Alinear las imágenes en la parte superior */
-    }
-    .main-container {
-      margin-top: 10%;
-      width: 90vw;
-      margin: auto;
-      height: 190vh !important;
-    }
-    .textoImagenText {
-      width: 80vw;
-      margin-top: 50% !important;
-      display: flex;
-      justify-content: center; /* Centra horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      font-size: 18px !important;
-      text-align: center;
-      font-weight: 300;
-      z-index: 1005;
-      color: #fff;
-      font-family: 'League Spartan';
-      font-style: normal;
-      position: relative;
-      margin-block-end: 0px;
-    }
-    .main-container .textos-card{
-      height: 80vh;
-      margin-right: 0px;
-      top:clamp(-91vh, -92.65vh, -85.95vh) !important;
-    }
-    .tituloEstancias {
-      position: relative;
-      font-family: 'League Spartan';
-      top: 2.5%;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 36px;
-      line-height: 50px;
-      text-align: center;
-      width: 90%;
-      margin: auto;
-      color: #582114;
-      z-index: 1001;
-    }
-    .original-text{
-      font-size: 36px !important;
-      text-align: center;
-      z-index: 1005;
-      color:white !important;
-      text-align: center;
-      display:flex;
-      width: 100%;
-      margin-top: 41vh;
-      font-family: 'League Spartan';
-      font-style: normal;
-      opacity: 1;
-      position: relative; /* Ajusta la posición absoluta */
-    }
-   .dots-container {
-     display: flex;
-     justify-content: space-around;
-     margin-top: 6vh;   
-   }
-   .dot-container-item {
-     margin: 8px 3px;
-     cursor:pointer;
-     font-size: 12px;
-     width: 80px;
-     height: 1.5vh;
-     display: block;
-     text-align: center;
-   }
-   .dot-container-item.active .boton {
-     width: 100%;
-     height: 100%;
-     top:0;
-     opacity: 1;
-     border-style: none;
-   }
-   .dot-container-item .boton {
-     width: 100%;
-     height: 100%;
-     top:0;
-     background-color: #63301B;
-     opacity: 0.19;
-     transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-     border-style: none;
-     border-radius: 5px;
-   }
-   .saber-mas2 {
-    width: 120px;
-    height: 30px;
-    background-color: transparent;
-    font-family: 'League Spartan';
-    font-style: normal;
-    font-size: 15px;
-    margin-top: 7.5%;
-    color: white;
-    border: 1px solid #fff; 
-    border-radius: 10px;
-    z-index: 1006;
-  }
-   .container-images {
-     position: relative; /* Asegura que los elementos absolutamente posicionados sean relativos a este contenedor */
-     width: 100%; /* Ancho completo del contenedor */
-     margin: auto;
-     height: 120%;
-     overflow: hidden; /* Si es necesario */
-     margin-top: clamp(4vh, 10%, 15%) !important; /* Ajusta según sea necesario */
-     display: flex;
-   }
-   .main-container .textos-card{
-     height: 80vh;
-     margin-right: 0px;
-     top:clamp(-89.95vh, -89.65vh, -85.95vh);
-   }
-   .container-images ul li img{
-     margin-top: 20%;
-     width: 100%;
-     height: 80vh;
-   }
-   .container-images ul {
-     width: 100%;
-     margin: auto;
-     display: relative;
-     padding-inline-start: 0px;
-     margin-top: 10%;
-     border: none;
-   }
-   .container-images img {
-     width: 100%; /* Ancho completo de la imagen */
-     height: 80vh; /* Altura automática para mantener la proporción */
-     margin-top: 12.5%;
-     display: block;
-     position: relative;
-     z-index: 1000;
-   }
-   .main-container .slider-container .container-images{
-     margin-top: 10%;
-   }
-   .textos-card {
-     position: relative;
-     display: flex;
-     min-width: 290px;
-     max-width: 100%;
-     margin: auto;
-     height: 100%;
-     font-family: 'League Spartan';
-     font-style: normal;
-     align-items: center;
-     text-align: center;
-     flex-direction: column; /* Alinear los elementos verticalmente */
-     color: #FFFFFF;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     z-index: 1005; /* Mueve el pseudo-elemento detrás de las imágenes */
-   }
-   .textos-card::before{
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(88, 33, 20);
-     opacity: 0.6;
-   }
-   .textos-card.opacidad-alternativa {
-     background-color: rgba(88, 33, 20);
-     content: "";
-     opacity: 0.96; /* Cambia la opacidad según sea necesario */
-   }
-   .subtituloEstancias{
-     position: relative;
-     width: 95%;
-     margin: 2.5%; 
-     top: 7.5% !important;
-     font-family: 'League Spartan';
-     font-style: normal;
-     font-weight: 300;
-     font-size: 26px;
-     line-height: 100% !important;
-     display: flex;
-     flex-direction: column; /* Alinear los elementos verticalmente */
-     align-items: center; /* Centrar horizontalmente los elementos */
-     text-align: center;
-     color: #000000;
-     z-index: 1001;
-   }
-   .textoImagenText {
-     width: 80vw;
-     margin-top: 70%;
-     display: flex;
-     justify-content: center; /* Centra horizontalmente */
-     align-items: center; /* Centra verticalmente */
-     font-size: 22px !important;
-     text-align: center;
-     z-index: 1005;
-     color: #fff;
-     font-family: 'League Spartan';
-     font-style: normal;
-     position: relative;
-     font-weight: 300;
-     margin-block-end: 0px;
-   }
-}
-
 @media only screen and (min-width:1024px){
       .main-container{
         display: none;
       }  
 }
-

@@ -7,8 +7,25 @@ function Footer() {
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
 
+  const handleNavLinkClick = (e) => {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+
+    const href = e.currentTarget.getAttribute("href");
+    const offset = 114; // Ajusta este valor según necesites
+    const element = document.getElementById(href.substring(1));
+
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="footer">
       <a href="#" style={{ textDecoration: "none" }}>
         <img
           src="public/logotipo_casaotono.svg"
@@ -20,6 +37,7 @@ function Footer() {
         <li>
           <a
             href="#objetivo"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Nosotros
@@ -28,6 +46,7 @@ function Footer() {
         <li>
           <a
             href="#estancias"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Estancia
@@ -36,6 +55,7 @@ function Footer() {
         <li className="habitaciones">
           <a
             href="#habitaciones"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Habitaciones
@@ -46,6 +66,7 @@ function Footer() {
         <li>
           <a
             href="#instalaciones"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Instalaciones
@@ -54,6 +75,7 @@ function Footer() {
         <li>
           <a
             href="#actividades"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Actividades
@@ -62,6 +84,7 @@ function Footer() {
         <li>
           <a
             href="#contacto"
+            onClick={handleNavLinkClick}
             style={{ textDecoration: "none", color: "#582114" }}
           >
             Contacto

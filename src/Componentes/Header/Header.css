@@ -29,13 +29,13 @@
     max-width: 1028px; /* Ancho máximo para evitar que el texto sea demasiado grande en pantallas grandes */
     height: auto; /* Altura automática para acomodar el tamaño del texto */
     left: 50%;
-    top: 40%;
+    top: 35%;
     transform: translate(-50%, -50%); /* Centra el texto de manera más efectiva */
   
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 500;
-    font-size: 54px; 
+    font-size: 3.5rem; 
     line-height: 1.14; /* Basado en tu línea de 114% */
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
-    font-size: 1.8vw; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
+    font-size: 2.5rem; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
     line-height: 1.12; /* Ajusta la altura de línea según necesites */
     display: flex;
     align-items: center;
@@ -69,18 +69,46 @@
     text-align: center;
     color: #FFFFFF;
   }
-  
-  /* Media queries para ajustar el tamaño de fuente en dispositivos más pequeños */
-  @media (max-width: 768px) {
-    .texto2 {
-      font-size: 3rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad */
+  @media (min-width: 600px) and (max-width:1023px) {
+    .texto1{
+      font-size: 3rem;
+      width: 85%;
+    }
+    .texto2{
+      font-size: 2.5rem;
     }
   }
   
-  @media (max-width: 480px) {
+  @media  (max-width: 320px) {
+    .texto1{
+      font-size: 1.5rem !important;
+      margin-top: 10%;
+     }
+     .texto2 {
+       font-size:  1.25rem; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
+       top: 75%;
+     }
+  }
+
+  @media (min-width:321px) and (max-width: 599px) {
+    .texto1{
+     font-size: 2rem !important;
+     margin-top: 5%;
+    }
     .texto2 {
-      font-size: 5.6vw; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
+      font-size:  1.5rem; /* Aumenta aún más el tamaño de fuente para pantallas muy pequeñas */
       top: 70%;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width:1280px){
+    .texto1{
+      font-size: 3rem !important;
+      width: 85%;
+    }
+    .texto2{
+      font-size: 2rem;
+      margin-top: 5%;
     }
   }
   

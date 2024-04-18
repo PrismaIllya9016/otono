@@ -50,7 +50,7 @@ function Estancias() {
           </div>
           <div
             className="imagen-estancia"
-            id="imagen-estancia1"
+            id="imagen-estancia2"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
@@ -74,7 +74,7 @@ function Estancias() {
           </div>
           <div
             className="imagen-estancia"
-            id="imagen-estancia1"
+            id="imagen-estancia3"
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >

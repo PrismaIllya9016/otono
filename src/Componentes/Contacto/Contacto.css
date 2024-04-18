@@ -8,22 +8,14 @@
  
   
 }
-
-
-
-
 .iconoCon{
   height: 30px;
   width: 28px;
   
 }
-
 .textoCont{
   font-size: 24px;
-
 }
-
-
 .formuButton{
     width: 130px;
     font-size:22px;
@@ -34,11 +26,9 @@
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 50px;
   }
-  
 .formuButton:hover {
     background-color: rgba(241, 176, 161, 0.1);
 }
-  
 .formuButtonComollegar{
     width: auto;
     height: 54px;
@@ -48,13 +38,45 @@
     background-color: #FFFFFF;
     transition: background-color 0.3s, color 0.3s;
   }
-
 .Formulario{
   margin-top: 6%;
 }
-
-  
-@media (max-width: 480px) {
+@media only screen and ( max-width: 320px){
+  .textoCont{
+    font-size: 1.25rem;
+    width: 80%;
+    margin: auto;
+  }
+  .nuestroObjetivo{
+    font-size: 1.5rem;
+  }
+  .cale123{
+    width: 100%;
+    margin-left: -20%;
+  }
+  .formuButton{
+    align-items: center;
+    width: 100%;
+  }
+  .cale123 .formuButton {
+    margin-left: 0%;
+    width: 90% !important;
+  }
+  .cale123 .formuButton .textoCont{
+    margin-top: 10px !important;
+    margin-left: 5px;
+  }
+  .cale123 .textoCont {
+    margin-left: 0px;
+  }
+  .iconoCon{
+    margin-left: -7.5px;
+  }
+  .descObjetivo{
+    margin-top: 0% !important;
+  }
+}
+@media only screen and ( min-width: 321px)  and (max-width: 599px)  {
 
   .CajaForm{
     display: flex;
@@ -64,7 +86,9 @@
     padding-top: 0% !important;
   }
 
-  
+  .textoCont{
+    font-size: 1.25rem;
+  }
 
   #ubicacion {
     margin-top: 0 !important;
@@ -83,6 +107,9 @@
     margin-bottom: 4% !important;
     margin-top:  2% !important;
   }
+  .formuButton div{
+    font-size: 1.25rem;
+  }
  
   .Formulario{
     margin-top: 1% !important;
@@ -99,7 +126,7 @@
     font-family: 'League Spartan';
     font-style: normal;
     font-weight: 300;
-    
+    width: 90% !important;
     line-height: 130%;
     text-align: "center";
     display: flex;
@@ -118,7 +145,7 @@
   font-family: 'League Spartan';
 font-style: normal;
 font-weight: 300;
-font-size: 22px;
+font-size: 1.25rem !important;
 line-height: 30px;
 /* or 136% */
 display: flex;
@@ -136,4 +163,85 @@ text-align: center;
 
   
 }
-
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .textoCont{
+    margin-left: 10%;
+    font-size: 1.35rem;
+  }
+  .formuButton div{
+    font-size: 1.25rem;
+  }
+  .textoIcono{
+    width: 80% !important;
+    padding-left: 0px !important;
+  }
+  #obCont{
+    width: 80%;
+  }
+  .cale123{
+    width: 100%;
+    margin-left: -10%;
+  }
+  .cale123 .textoCont{
+    margin-left: 0%;
+    line-height: 100%;
+  }
+  .Formulario{
+    margin-top: 20%;
+  }
+  .nuestroObjetivo{
+    margin-top: 10% !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1280px){
+  .textoCont{
+    margin-left: 10%;
+    font-size: 1.4rem;
+  }
+  .formuButton div{
+    font-size: 1.25rem;
+  }
+  .textoIcono{
+    width: 80% !important;
+    padding-left: 0px !important;
+  }
+  #obCont{
+    width: 80%;
+  }
+  .cale123{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .cale123 .textoCont{
+    margin-left: 0%;
+  }
+  .Formulario{
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width: 1281px){
+    .textoCont{
+    margin-left: 10%;
+    font-size: 1.5rem;
+  }
+  .formuButton div{
+    font-size: 1.25rem;
+  }
+  .textoIcono{
+    width: 80% !important;
+    padding-left: 0px !important;
+  }
+  #obCont{
+    width: 80%;
+  }
+  .cale123{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .cale123 .textoCont{
+    margin-left: 0%;
+  }
+  .Formulario{
+    margin-top: 7.5%;
+  }
+}

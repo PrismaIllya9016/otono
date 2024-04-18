@@ -104,7 +104,7 @@ const MobileMenu = () => {
             right: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.98)",
+            backgroundColor: "rgb(99, 48, 27, .95)",
             animation: animation,
             "@keyframes slideIn": {
               from: { opacity: 0, transform: "translateX(100%)" },

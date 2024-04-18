@@ -1,97 +1,69 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Habitaciones.css";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, Grid } from "@mui/material";
 
 function Habitaciones() {
-  const [imagen, setImagen] = useState("public/_DSC7821 1.png");
+  const [imagenes, setImagenes] = useState({
+    principal: "public/estandar1.jpg",
+    secundaria1: "public/estandar2.jpg",
+    secundaria2: "public/estandar3.jpg",
+  });
   const [seleccionado, setSeleccionado] = useState("Estandar");
   const [label, setLabel] = useState("Estandar");
   const [texto, setTexto] = useState(
     "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor"
   );
 
-  //   PARALAX EFFECT
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY;
-      const parallaxSpeed = 0.6;
-      const parallaxOffset = scrolled * parallaxSpeed;
-      document.querySelector(
-        ".Habitaciones"
-      ).style.backgroundPositionY = `${parallaxOffset}px`;
-    };
+  // Función para cambiar las imágenes cuando se hace clic en una secundaria
+  const cambiarImagenes = (principalSrc, secundaria1Src, secundaria2Src) => {
+    setImagenes({
+      principal: principalSrc,
+      secundaria1: secundaria1Src,
+      secundaria2: secundaria2Src,
+    });
+  };
 
-    // Añade el evento de desplazamiento cuando el componente se monta
-    window.addEventListener("scroll", handleScroll);
-
-    // Limpia el evento de desplazamiento cuando el componente se desmonte
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // Función para manejar el click en un elemento
+  const manejarClick = (item) => {
+    setSeleccionado(item);
+    const seleccion = images.find((img) => img.label === item);
+    if (seleccion) {
+      setLabel(seleccion.label);
+      setTexto(seleccion.textoImagen);
+      cambiarImagenes(
+        seleccion.principal,
+        seleccion.secundaria1,
+        seleccion.secundaria2
+      );
+    }
+  };
 
   const images = [
     {
       label: "Estandar",
-      imgPath: "public/_DSC7821 1.png",
+      principal: "public/estandar1.jpg",
+      secundaria1: "public/estandar2.jpg",
+      secundaria2: "public/estandar3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado.",
     },
     {
       label: "Mini suite",
-      imgPath: "public/Habitaciones/minisuite_habitacion.jpg",
+      principal: "public/minisuite1.jpg",
+      secundaria1: "public/minisuite2.jpg",
+      secundaria2: "public/minisuite3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor",
     },
     {
       label: "Duplex",
-      imgPath: "public/Habitaciones/duplex_habitacion.jpg",
+      principal: "public/duplex1.jpg",
+      secundaria1: "public/duplex2.jpg",
+      secundaria2: "public/duplex3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor (compartida)",
     },
   ];
-  // Función para manejar el click en un elemento
-  const manejarClick = (item) => {
-    setSeleccionado(item);
-    // Encuentra la imagen correspondiente al item seleccionado
-    const imagen = images.find((img) => img.label === item);
-    if (imagen) {
-      setImagen(imagen.imgPath);
-      setTexto(imagen.textoImagen);
-      setLabel(imagen.label);
-    }
-  };
-
-  const obtenerEstiloBorderRight = (item) => {
-    return {
-      cursor: "pointer",
-      borderRight:
-        seleccionado === item
-          ? "5px solid rgba(99, 48, 27, 1)"
-          : "5px solid rgba(99, 48, 27, 0.19)",
-      paddingRight: "20px",
-      height: "135px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "flex-start",
-      transition: "border-right 0.5s ease",
-    };
-  };
-
-  const obtenerEstiloBorderTop = (item) => {
-    return {
-      borderTop:
-        seleccionado === item
-          ? "10.5px solid rgba(99, 48, 27, 1)"
-          : "10.5px solid rgba(99, 48, 27, 0.19)",
-      width: "92px",
-      display: "flex",
-      alignItems: "center",
-      borderRadius: "55px",
-
-      transition: "border-right 0.5s ease",
-    };
-  };
 
   return (
     <div
@@ -136,12 +108,11 @@ function Habitaciones() {
             display: "flex",
             width: "100%",
             height: "600px",
-
             alignItems: "center",
             justifyContent: "center",
           }}
         >
-          <Container className="Menu" sx={{ width: "30%", marginLeft: "10%" }}>
+          <Container className="Menu" sx={{ width: "20%" }}>
             {" "}
             <ul
               style={{
@@ -155,58 +126,101 @@ function Habitaciones() {
                 alignItems: "flex-end",
               }}
             >
-              <li
-                style={obtenerEstiloBorderRight("Estandar")}
-                onClick={() => manejarClick("Estandar")}
-              >
-                Estandar
-              </li>
-              <li
-                style={obtenerEstiloBorderRight("Mini suite")}
-                onClick={() => manejarClick("Mini suite")}
-              >
-                <a> Mini suite</a>
-              </li>
-              <li
-                style={obtenerEstiloBorderRight("Duplex")}
-                onClick={() => manejarClick("Duplex")}
-              >
-                <a style={{ paddingRight: "16px" }}>Duplex</a>
-              </li>
+              {images.map((item) => (
+                <li
+                  key={item.label}
+                  style={{
+                    cursor: "pointer",
+                    borderRight:
+                      seleccionado === item.label
+                        ? "5px solid rgba(99, 48, 27, 1)"
+                        : "5px solid rgba(99, 48, 27, 0.19)",
+                    paddingRight: "20px",
+                    height: "135px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    transition: "border-right 0.5s ease",
+                  }}
+                  onClick={() => manejarClick(item.label)}
+                >
+                  {item.label}
+                </li>
+              ))}
             </ul>
           </Container>
 
-          <Container
-            className="ImagenContainer"
-            sx={{
-              zIndex: "1002",
-              position: "relative",
-              marginRight: "15%",
+          <Grid container spacing={2} className="ImagenContainer">
+            {/* Imagen principal grande a la izquierda */}
+            <Grid item xs={12} lg={6} xl={6.15}>
+              <img
+                className="ImagenHabitacion"
+                id="principal"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+                src={imagenes.principal}
+                alt=""
+              />
+            </Grid>
 
-              display: "flex",
-              justifyContent: "flex-start",
-              flexDirection: "column",
-            }}
-          >
-            <img
-              className="ImagenHabitacion"
-              style={{
-                maxWidth: "815px",
-                height: "464px",
-                marginTop: "20px",
-                borderRadius: "25px",
-              }}
-              src={imagen}
-              alt=""
-            />
-            <Typography
-              className="Incluye"
-              sx={{ marginTop: "20px", width: "900px" }}
-              variant="h6"
-            >
-              {texto}
-            </Typography>
-          </Container>
+            {/* Dos imágenes más pequeñas a la derecha en dispositivos medianos y grandes */}
+            <Grid item xs={12} lg={5} xl={3}>
+              <Grid container spacing={2}>
+                <Grid item xs={6} lg={7} xl={12}>
+                  <img
+                    className="ImagenHabitacion"
+                    id="secundaria1"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                    src={imagenes.secundaria1}
+                    alt=""
+                    onClick={() =>
+                      cambiarImagenes(
+                        imagenes.secundaria1,
+                        imagenes.principal,
+                        imagenes.secundaria2
+                      )
+                    }
+                  />
+                </Grid>
+                <Grid item xs={6} lg={7} xl={12}>
+                  <img
+                    className="ImagenHabitacion"
+                    id="secundaria2"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
+                    src={imagenes.secundaria2}
+                    alt=""
+                    onClick={() =>
+                      cambiarImagenes(
+                        imagenes.secundaria2,
+                        imagenes.secundaria1,
+                        imagenes.principal
+                      )
+                    }
+                  />
+                </Grid>
+              </Grid>
+            </Grid>
+
+            {/* Descripción */}
+            <Grid item xs={12}>
+              <Typography
+                className="Incluye"
+                variant="h6"
+                sx={{ marginTop: "20px" }}
+              >
+                {texto}
+              </Typography>
+            </Grid>
+          </Grid>
+
           <ul
             className="MenuMovil"
             style={{
@@ -217,18 +231,23 @@ function Habitaciones() {
               width: "100%",
             }}
           >
-            <li
-              style={obtenerEstiloBorderTop("Estandar")}
-              onClick={() => manejarClick("Estandar")}
-            ></li>
-            <li
-              style={obtenerEstiloBorderTop("Mini suite")}
-              onClick={() => manejarClick("Mini suite")}
-            ></li>
-            <li
-              style={obtenerEstiloBorderTop("Duplex")}
-              onClick={() => manejarClick("Duplex")}
-            ></li>
+            {images.map((item) => (
+              <li
+                key={item.label}
+                style={{
+                  borderTop:
+                    seleccionado === item.label
+                      ? "10.5px solid rgba(99, 48, 27, 1)"
+                      : "10.5px solid rgba(99, 48, 27, 0.19)",
+                  width: "92px",
+                  display: "flex",
+                  alignItems: "center",
+                  borderRadius: "55px",
+                  transition: "border-right 0.5s ease",
+                }}
+                onClick={() => manejarClick(item.label)}
+              ></li>
+            ))}
           </ul>
         </Box>
       </Box>

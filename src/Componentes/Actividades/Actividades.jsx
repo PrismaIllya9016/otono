@@ -2,7 +2,7 @@ import "./Actividades.css";
 
 function Actividades() {
   return (
-    <div id="estancias" className="seccionActividades">
+    <div id="actividades" className="seccionActividades">
       <h1 className="tituloActividades">Actividades</h1>
       <p className="subtituloActividades">
         Descubre cómo enriquecemos la vida de nuestros residentes a través de
@@ -45,7 +45,7 @@ function Actividades() {
                 creando recuerdos significativos para ellos.{" "}
               </div>
             </div>
-            <div className="imagenActividades" id="imagenActividades1">
+            <div className="imagenActividades" id="imagenActividades4">
               <img src="public/eventos.jpg" alt="Logo" />
               <div className="original-text">Eventos</div>
               <div className="hola123">

@@ -1,21 +1,135 @@
-@media only screen and (max-width: 600px) {
-    .hola {
-        position: absolute;
-        width: 90vw;
-        left: 50%; /* Centra horizontalmente */
-        top: 93%; /* Centra verticalmente */
-        transform: translate(-50%, -50%); /* Centra completamente */
+@media only screen and (min-width: 1024px) {
+
+}
+.hola {
+    position: absolute;
+    width: 80%;
+    left: 50%; /* Centra horizontalmente */
+    top: 85%; /* Centra verticalmente */
+    transform: translate(-50%, -50%); /* Centra completamente */
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6E5356;
+    border-top: 1px solid #D45F35;
+}
+.footerbotones{
+    width: 12vw;
+    background-color: transparent;
+    border-radius: 15px;
+    margin-top: 5vh;
+    font-size: 1rem;
+    border:1px solid #D45F35;
+    color: #D45F35;
+    height: 6vh;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.footerbotones:hover{
+        background-color: rgba(241, 176, 161, 0.1);
+        cursor: pointer;
+}
+.footerLogo {
+        width: 300px;
+        height: 150px;
+        position: relative;
+        display: flex;
+        margin-top: -20%;
+}
+.footer-container {
+        background-color: #FCF9F5;
+        width: 100%;
+        min-height: 35%; /* Cambia height a min-height para que siempre tenga al menos esta altura */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative; /* Permite que el párrafo se posicione relativo a este contenedor */
+       
+}
+.footerList1 {
+        display: flex;
+        height: 15vh;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        padding-inline-start: 0px;
+        margin-top: -2%;
+}
+.footerList2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        padding-inline-start: 0px;
+        height: 15vh;
+        margin-top: -2%;
+}
+.footerList1 li {
         font-family: 'League Spartan';
         font-style: normal;
+        justify-content: space-around;
         font-weight: 300;
+        font-size: 1.625rem;
+        text-decoration-color: #D45F35;
+        line-height: 21px;
+        color: #582114;
+        margin: 10px; /* Añade un espacio entre los ítems */
+        text-align: center; /* Centra el texto horizontalmente */
+        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
+}
+.footerList2 li {
+        font-family: 'League Spartan';
+        font-style: normal;
+        justify-content: space-around;
+        font-weight: 300;
+        font-size: 1.625rem;
+        text-decoration-color: #D45F35;
+        line-height: 21px;
+        color: #D45F35;
+        margin: 10px; /* Añade un espacio entre los ítems */
+        text-align: center; /* Centra el texto horizontalmente */
+        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
+}
+.whatsapp {
+    width: 4vw;
+    height: 5vh;
+    align-items: center;
+    margin-top: -6vh;
+}
+.facebook {
+    width: 4vw;
+    height: 5vh;
+    align-items: center;
+    margin-top: -6vh;
+}
+.maps {
+    width: 4vw;
+    height: 5vh;
+    align-items: center;
+    margin-top: -6vh;
+}
+.redes{
+    width: 12vw;
+    height: 10vh;
+    position: relative;
+    margin-top: -1%;
+   
+}
+
+@media only screen and (min-width:321px) and (max-width: 360px){
+    .hola {
+        width: 90vw;
+        top: 93%; /* Centra verticalmente */
         font-size: 18px;
-        line-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6E5356;
-        border-top: 1px solid #D45F35;
-        margin-block-start:auto;
     }
     .footerLogo {
         width: 50%;
@@ -27,94 +141,54 @@
         right: 0;
     }
     .footer-container {
-        background-color: #FCF9F5;
         width: 100vw;
-        height: 120vh; /* Cambia height a min-height para que siempre tenga al menos esta altura */
-        display: flex;
-        justify-content: space-around; /* Coloca los elementos al inicio y al final del contenedor */
-        align-items: center;
+        height: 115vh; /* Cambia height a min-height para que siempre tenga al menos esta altura */
         position: absolute; /* Permite que el párrafo se posicione relativo a este contenedor */
     }
     .footerList1 {
-        display: flex;
         width: 60vw;
         margin:auto;
         height: 20vh;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        top: 30%;
+        top: 30% !important;
         position: absolute;
-        padding-inline-start: 0px;
     }
     .footerList2 {
-        display: flex;
         width: 60vw;
         margin:auto;
         height: 20vh;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        top: 47%;
+        top: 47.5% !important;
         position: absolute;
-        padding-inline-start: 0px;
     }
     .footerList1 li {
-        font-family: 'League Spartan';
-        font-style: normal;
-        justify-content: space-around;
-        font-weight: 300;
-        font-size: 22px;
-        line-height: 21px;
+        font-size: 1.25rem;
         flex-direction: column;
         color: #582114;
         width: 60vw;
-        text-align: center; /* Centra el texto horizontalmente */
-        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
     }
     .footerList2 li {
-        font-family: 'League Spartan';
-        font-style: normal;
-        justify-content: space-around;
-        font-weight: 300;
-        font-size: 22px;
-        line-height: 21px;
+        font-size: 1.25rem;
         flex-direction: column;
         color: #582114;
         width: 60vw;
-        text-align: center; /* Centra el texto horizontalmente */
-        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
     }
     .footerbotones{
         width: 60%;
-        height: 40px;
+        height: 50px;
         margin-left: 20%;
-        background-color: transparent;
-        border-radius: 20px;
-        align-items: center;
-        font-size: 14px;
-        cursor: pointer;
-        border:2px solid #D45F35;
-        color: #D45F35;
-        position: flex;
+        font-size: 1.25rem !important;
     }
     .whatsapp {
         width: 42.5px;
-        cursor: pointer;
         margin: 0 7.3%;
     }
     .facebook {
         width: 42.5px;
-        cursor: pointer;
         margin: 0 7.3%;
        
     }
     .maps {
         width: 42.5px;
         margin: 0 7.3%;
-        cursor: pointer;
         margin-top: 0%;
  
     }
@@ -125,7 +199,95 @@
         flex-direction: column;
         margin-top: 350px;
         justify-content: space-between;
-        cursor: pointer;
+        align-items: center;
+        margin-bottom: -5%;
+    }  
+    .redes .footerbotones{
+        margin-top: 5%;
+    }
+    .redes div{
+        width: 60%;
+        margin: auto;        
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width:599px) {
+    .hola {
+        width: 90vw;
+        top: 93%; /* Centra verticalmente */
+        font-size: 18px;
+        line-height: 1.1;
+    }
+    .footerLogo {
+        width: 40%;
+        height: 50vh;
+        margin: auto; /* Centra horizontalmente */
+        top: -5%;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .footer-container {
+        width: 100vw;
+        height: 120vh; /* Cambia height a min-height para que siempre tenga al menos esta altura */
+        position: absolute; /* Permite que el párrafo se posicione relativo a este contenedor */
+    }
+    .footerList1 {
+        width: 60vw;
+        margin:auto;
+        height: 20vh;
+        top: 30%;
+        position: absolute;
+    }
+    .footerList2 {
+        width: 60vw;
+        margin:auto;
+        height: 20vh;
+        top: 47% !important;
+        position: absolute;
+    }
+    .footerList1 li {
+        font-size: 1.25rem;
+        flex-direction: column;
+        color: #582114;
+        width: 60vw;
+    }
+    .footerList2 li {
+        font-size: 1.25rem;
+        flex-direction: column;
+        color: #582114;
+        width: 60vw;
+    }
+    .footerbotones{
+        width: 80%;
+        height: 50px;
+        margin-left: 12.5%;
+        font-size: 1.25rem !important;
+    }
+    .whatsapp {
+        width: 42.5px;
+        margin: 0 7.3%;
+    }
+    .facebook {
+        width: 42.5px;
+        margin: 0 7.3%;
+        margin-left: 10%;
+       
+    }
+    .maps {
+        width: 42.5px;
+        margin: 0 7.3%;
+        margin-top: 0%;
+ 
+    }
+    .redes{
+        width: 400px;
+        margin: auto;
+        position: absolute;
+        flex-direction: column;
+        margin-top: 350px;
+        justify-content: space-between;
         align-items: center;
         margin-bottom: -20%;
     }  
@@ -137,128 +299,58 @@
         margin: auto;        
         align-items: center;
     }
-    .redes div a {
-        width: 100%; /* Ajusta el ancho según tus necesidades */
-        justify-content: space-evenly;
-        position:relative;
-        align-content: center;
-    }
+
 }
  
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
 .hola {
-        position: absolute;
-        width: 80%;
-        left: 50%; /* Centra horizontalmente */
-        top: 80%; /* Centra verticalmente */
-        transform: translate(-50%, -50%); /* Centra completamente */
-        font-family: 'League Spartan';
-        font-style: normal;
-        font-weight: 400;
+        top: 75%; /* Centra verticalmente */
         font-size: 20px;
-        line-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6E5356;
-        border-top: 1px solid #D45F35;
+        line-height: 1.1;
 }
     .footerbotones{
         width: 100px;
-        height: 50px;
+        height: 60px;
         margin-right: 100px;
-        background-color: transparent;
-        border-radius: 20px;
-        font-size: 12px;
+        font-size: 1rem !important;
         cursor: pointer;
-        border:2px solid #D45F35;
-        color: #D45F35;
         }
     .footerLogo {
             width: 149px;
             height: 130px;
         }
     .footer-container {
-            background-color: #FCF9F5;
             width: 100vw;
             min-height: 45vh; /* Cambia height a min-height para que siempre tenga al menos esta altura */
-            display: flex;
-            justify-content: space-around; /* Coloca los elementos al inicio y al final del contenedor */
-            align-items: center;
-            position: relative; /* Permite que el párrafo se posicione relativo a este contenedor */
         }
        
-     .footer-container .footerList1{
-            display: flex;
+    .footerList1{
             height: 13vh;
-            justify-content: space-around;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            position: relative;
-            padding-inline-start: 0px;
         }
        
     .footerList2{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            position: relative;
             height: 13vh;
-            padding-inline-start: 0px;
         }
        
     .footerList1 li {
-            font-family: 'League Spartan';
-            font-style: normal;
-            justify-content: space-around;
-            font-weight: 300;
-            font-size: 23px;
+        font-size: 1.625rem;
             line-height: 21px;
-            color: #582114;
-            padding-inline-start: 0px;
-            margin: 10px; /* Añade un espacio entre los ítems */
-            text-align: center; /* Centra el texto horizontalmente */
-            flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
         }
         .footerList2 li {
-            font-family: 'League Spartan';
-            font-style: normal;
-            justify-content: space-around;
-            font-weight: 300;
-            font-size: 23px;
+            font-size: 1.625rem;
             line-height: 21px;
-            color: #582114;
-            padding-inline-start: 0px;
-            margin: 10px; /* Añade un espacio entre los ítems */
-            text-align: center; /* Centra el texto horizontalmente */
-            flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
         }
  
     .whatsapp {
-        width: 4vw;
         height: 6vh;
-        align-items: center;
-        margin-top: -6vh;
-        cursor: pointer;
     }
  
     .facebook {
-        width: 4vw;
         height: 6vh;
-        align-items: center;
-        margin-top: -6vh;
-        cursor: pointer;
     }
  
     .maps {
-        width: 4vw;
         height: 6vh;
-        align-items: center;
-        margin-top: -6vh;
-        cursor: pointer;
     }
  
     .redes{
@@ -267,156 +359,15 @@
         flex-direction: column;
         margin-top: 5%;
         justify-content: space-around;
-        cursor: pointer;
     }
 }
  
-@media only screen and (min-width: 1024px) {
-    .hola {
-        position: absolute;
-        width: 80%;
-        left: 50%; /* Centra horizontalmente */
-        top: 85%; /* Centra verticalmente */
-        transform: translate(-50%, -50%); /* Centra completamente */
-        font-family: 'League Spartan';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6E5356;
-        border-top: 1px solid #D45F35;
-    }
-    .footerbotones{
-        width: 12vw;
-        background-color: transparent;
-        border-radius: 15px;
-        margin-top: 5vh;
-        font-size: 15px;
-        border:2px solid #D45F35;
-        color: #D45F35;
-        height: 6vh;
-        margin-top: 5%;
-        }
-        .footerLogo {
-            width: 300px;
-            height: 150px;
-            position: relative;
-            display: flex;
-            margin-top: -20%;
-        }
-        .footer-container {
-            background-color: #FCF9F5;
-            width: 100%;
-            min-height: 35%; /* Cambia height a min-height para que siempre tenga al menos esta altura */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: relative; /* Permite que el párrafo se posicione relativo a este contenedor */
-           
-        }
-       
-        .footerList1 {
-            display: flex;
-            height: 15vh;
-            justify-content: space-around;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            position: relative;
-            padding-inline-start: 0px;
-            margin-top: -2%;
-        }
-       
-        .footerList2 {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            position: relative;
-            padding-inline-start: 0px;
-            height: 15vh;
-            margin-top: -2%;
-        }
-       
-        .footerList1 li {
-            font-family: 'League Spartan';
-            font-style: normal;
-            justify-content: space-around;
-            font-weight: 300;
-            font-size: 26px;
-            text-decoration-color: #D45F35;
-            line-height: 21px;
-            color: #D45F35;
-            margin: 10px; /* Añade un espacio entre los ítems */
-            text-align: center; /* Centra el texto horizontalmente */
-            flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
-        }
-        .footerList2 li {
-            font-family: 'League Spartan';
-            font-style: normal;
-            justify-content: space-around;
-            font-weight: 300;
-            font-size: 26px;
-            text-decoration-color: #D45F35;
-            line-height: 21px;
-            color: #D45F35;
-            margin: 10px; /* Añade un espacio entre los ítems */
-            text-align: center; /* Centra el texto horizontalmente */
-            flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
-        }
- 
-    .whatsapp {
-        width: 4vw;
-        height: 5vh;
-        align-items: center;
-        margin-top: -6vh;
-    }
- 
-    .facebook {
-        width: 4vw;
-        height: 5vh;
-        align-items: center;
-        margin-top: -6vh;
-    }
- 
-    .maps {
-        width: 4vw;
-        height: 5vh;
-        align-items: center;
-        margin-top: -6vh;
-    }
- 
-    .redes{
-        width: 12vw;
-        height: 10vh;
-        position: relative;
-        margin-top: -1%;
-       
-    }
-}
  
 @media only screen and ( max-width: 320px){  
 .hola {
-        position: absolute;
-        width: 90vw;
-        left: 50%; /* Centra horizontalmente */
         top: 97%; /* Centra verticalmente */
-        transform: translate(-50%, -50%); /* Centra completamente */
-        font-family: 'League Spartan';
-        font-style: normal;
-        font-weight: 400;
         font-size: 15px;
-        line-height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #6E5356;
-        border-top: 1px solid #D45F35;
-        margin-block-start:auto;
+        line-height: 1.1;
 }
 .footerLogo {
         width: 50%;
@@ -428,90 +379,49 @@
         right: 0;
 }
 .footer-container {
-        background-color: #FCF9F5;
         width: 100vw;
         height: 140vh; /* Cambia height a min-height para que siempre tenga al menos esta altura */
-        display: flex;
-        justify-content: space-around; /* Coloca los elementos al inicio y al final del contenedor */
-        align-items: center;
         position: absolute; /* Permite que el párrafo se posicione relativo a este contenedor */
 }
-.footer-container a {
-        align-items: center;
-       
-}
+
 .footerList1 {
-        display: flex;
         width: 60vw;
         margin:auto;
         height: 20vh;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
         top: 30%;
         position: absolute;
-        padding-inline-start: 0px;
 }
 .footerList2 {
-        display: flex;
         width: 60vw;
         margin:auto;
         height: 20vh;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
         top: 47%;
         position: absolute;
-        padding-inline-start: 0px;
+
 }
 .footerList1 li {
-        font-family: 'League Spartan';
-        font-style: normal;
-        justify-content: space-around;
-        font-weight: 300;
         font-size: 22px;
         line-height: 21px;
         flex-direction: column;
-        color: #582114;
         width: 60vw;
-        text-align: center; /* Centra el texto horizontalmente */
-        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
 }
 .footerList2 li {
-        font-family: 'League Spartan';
-        font-style: normal;
-        justify-content: space-around;
-        font-weight: 300;
         font-size: 22px;
         line-height: 21px;
         flex-direction: column;
-        color: #582114;
         width: 60vw;
-        text-align: center; /* Centra el texto horizontalmente */
-        flex: 1; /* Ocupa el espacio disponible igualmente entre los ítems */
 }
 .footerbotones{
         width: 70vw;
-        height: 40px;
+        height: 2rem;
         margin-left: 10vw;
         margin-right: 7.5vw;
-        margin-top: 1vh;
-        background-color: transparent;
-        border-radius: 20px;
-        align-items: center;
-        font-size: 14px;
-        cursor: pointer;
-        border:2px solid #D45F35;
+        font-size: 1rem !important;
         color: #D45F35;
-        position: flex;
-        padding-inline: 0px;
 }
 .whatsapp {
         width: 40px;
         height: 60px;
-        align-items: center;
         cursor: pointer;
         padding-right: 10vw;
         margin-top: 40%;
@@ -521,7 +431,6 @@
 .facebook {
         width: 40px;
         height: 60px;
-        align-items: center;
         cursor: pointer;
         padding-left: 15vw;
         margin-top: 40%;
@@ -532,7 +441,6 @@
 .maps {
         width: 40px;
         height: 60px;
-        align-items: center;
         cursor: pointer;
         padding-left: 3vw;
         padding-right: 3vw;
@@ -553,8 +461,13 @@
         margin-bottom: -5vh;
 }
 .redes div{
+    margin-top: -5%;
         width: 90vw;
        
+    }
+    .hola p{
+        width: 100%;
+        font-size: 14px;
     }
 }
  

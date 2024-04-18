@@ -9,153 +9,125 @@
   opacity: 0.85; /* Ajusta la opacidad según necesites */
 }
  
-@media only screen and (min-width: 1024px) {
-  .eventosh1{
-    font-size: 36px;
-    font-weight: 500;
-    padding: 3.5vw 5%;
-    top: 10%;
+.eventosh1{
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 3.5vw 7.5%;
+  top: 5%;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1001;
+  font-family: 'League Spartan';
+  font-style: normal;
+}
+.eventosh3{
+    font-size: 1.625rem;
+    font-weight: 300;
+    padding: 0 7.5%;
     color: #FFFFFF;
+    text-align: justify;
+    max-width: 38%;
     position: relative;
+    line-height: 130%;
+    width: 900px;
+    top: 5%;
     z-index: 1001;
     font-family: 'League Spartan';
     font-style: normal;
+}
+.reserva {
+      position: absolute;
+      right: 10%; /* Ajusta la posición a la derecha */
+      top: 50%; /* Centra verticalmente el botón */
+      width: 15%;
+      height: 54px;
+      border-radius: 15px;
+      font-size: 20px;
+      background-color: transparent;
+      border: 1px solid white;
+      cursor: pointer;
+      z-index: 1001;
+      color: #FFFFFF;
+      font-family: 'League Spartan';
+      font-style: normal;
+}
+.Eventos {
+      /* Estilos para el contenedor principal */
+      background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
+      width: 100%;
+      height: 40vh;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+}
+ 
+@media (min-width: 1024px) and (max-width:1280px){
+  .eventosh3{
+    max-width: 57%;
+  }
+  .Eventos{
+    height: 45vh;
+  }
+}
+
+@media (min-width: 600px) and (max-width:1023px) {
+  .eventosh1{
+    font-size: 2.5rem;
+    max-width: 50vw;
+    top: 7%;
+    padding: 7vw 5%;
+    text-align: center;
     }
     .eventosh3{
-      font-size: 26px;
+      font-size: 1.625rem;
       font-weight: 300;
       padding: 0 5%;
-      color: #FFFFFF;
-      text-align: justify;
-      max-width: 70%;
-      position: relative;
-      width: 900px;
-      top: 10%;
-      z-index: 1001;
-      font-family: 'League Spartan';
-      font-style: normal;
-      }
-      .reserva {
-        position: absolute;
-        right: 5%; /* Ajusta la posición a la derecha */
-        top: 50%; /* Centra verticalmente el botón */
-        width: 15%;
-        height: 54px;
-        border-radius: 15px;
-        font-size: 20px;
-        border-color: #fff;
-        background-color: transparent;
-        border-color: white;
-        cursor: pointer;
-        z-index: 1001;
-        color: #FFFFFF;
-        font-family: 'League Spartan';
-        font-style: normal;
-      }
-      .Eventos {
-        /* Estilos para el contenedor principal */
-        background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
-        width: 100%;
-        height: 40vh;
-        position: relative;
-        background-position: center;
-        background-size: cover;
-      }
-}
- 
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
-  .eventosh1{
-    font-size: 36px;
-    font-weight: 500;
-    max-width: 50vw;
-    top: 10%;
-    padding: 7vw 4vh;
-    text-align: center;
-    font-family: 'League Spartan';
-    font-style: normal;
-    color: #FFFFFF;
-    position: relative;
-    z-index: 1001;
-    }
-    .eventosh3{
-      font-size: 26px;
-      font-weight: 300;
-      padding: 0 5vh;
-      top: 10%;
+      margin-top: 5%;
+      line-height: 130%;
       max-width: 50vw;
       color: #FFFFFF;
-      text-align: left;
-      position: relative;
       text-align: justify;
-      z-index: 1001;
-      font-family: 'League Spartan';
-      font-style: normal;
       }
       .reserva {
-        position: absolute;
-        right: 10vw; /* Ajusta la posición a la derecha */
-        top: 50%; /* Centra verticalmente el botón */
+        right: 5%; /* Ajusta la posición a la derecha */
         width: 218px;
+        top: 50%;
         height: 54px;
         border-radius: 15px;
         font-size: 20px;
-        background-color: transparent;
-        border-color: white;
-        cursor: pointer;
-        z-index: 1001;
-        color: #FFFFFF;
-        font-family: 'League Spartan';
-        font-style: normal;
       }
       .Eventos {
-        /* Estilos para el contenedor principal */
-        background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
-        width: 100%;
         height: 50vh;
-        position: relative;
-        background-position: center;
-        background-size: cover;
       }
 }
  
-@media only screen and (max-width: 600px) {
+@media only screen and ( min-width: 361px)  and (max-width: 599px) {
   /* Pantalla de Celular */
   .eventosh1{
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 2rem;
     max-width: 80%;
     padding: 10%;
     text-align: center;
-    color: #FFFFFF;
     position: absolute;
-    z-index: 1001;
-    font-family: 'League Spartan';
-    font-style: normal;
     }
     .eventosh3{
-      font-size: 26px;
-      font-weight: 300;
+      font-size: 1.25rem;
       padding: 10%;
-      top:25%;
+      top:27.5%;
       max-width: 80vw;
       max-height: 50vh;
-      color: #FFFFFF;
-      text-align: left;
       position: absolute;
+      line-height: 1.3;
       text-align: center;
-      font-family: 'League Spartan';
-      font-style: normal;
-      z-index: 1001;
       }
       .reserva {
         position: absolute;
         top: 80%;
-        margin-left: 20%;
-        width: 60%;
+        width: 80%;
         height: 54px;
         border-radius: 15px;
-        font-size: 2.8vh;
-        background-color: transparent;
+        font-size: 1.3rem;
+
         border-color: white;
         cursor: pointer;
         z-index: 1001;
@@ -163,14 +135,8 @@
       }
  
       .Eventos {
-        /* Estilos para el contenedor principal */
-        background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
-        width: 100%;
-        height: 90%;
-        position: relative;
-        background-position: center;
+        height: 80%;
         justify-content: space-around;
-        background-size: cover;
       }
  
 }
@@ -178,42 +144,63 @@
 @media only screen and ( max-width: 320px){  
   /* Pantalla de Celular */
   .eventosh1{
-    font-size: 36px;
-    font-weight: 500;
-  
+    font-size: 1.5rem;
     max-width: 80%;
     padding: 10%;
+    top: 5%;
     text-align: center;
-    color: #FFFFFF;
     position: absolute;
-    z-index: 1001;
-    font-family: 'League Spartan';
-    font-style: normal;
     }
     .eventosh3{
-      font-size: 26px;
-      font-weight: 300;
+      font-size: 1.25rem;
       padding: 10%;
       top:25%;
       max-width: 80vw;
       max-height: 50vh;
-      color: #FFFFFF;
-      text-align: left;
       position: absolute;
       text-align: center;
-      font-family: 'League Spartan';
-      font-style: normal;
-      z-index: 1001;
       }
       .reserva {
         position: absolute;
         top: 87.5%;
-        margin-left: 20%;
+        margin-right: 10%;
         width: 60%;
-        height: 40px;
+        height: 2rem;
+        font-size: 1rem;
+      }
+ 
+      .Eventos {
+        height: 110vh;
+        justify-content: space-around;
+      }
+}
+
+@media only screen and ( min-width: 321px)  and (max-width: 360px) {
+  .eventosh1{
+    font-size: 2rem;
+    max-width: 80%;
+    padding: 10%;
+    text-align: center;
+    position: absolute;
+    }
+    .eventosh3{
+      font-size: 1.25rem;
+      padding: 10%;
+      top:27.5%;
+      max-width: 80vw;
+      max-height: 50vh;
+      position: absolute;
+      line-height: 1.3;
+      text-align: center;
+      }
+      .reserva {
+        position: absolute;
+        top: 80%;
+        width: 80%;
+        height: 54px;
         border-radius: 15px;
-        font-size: 2.8vh;
-        background-color: transparent;
+        font-size: 1.3rem;
+
         border-color: white;
         cursor: pointer;
         z-index: 1001;
@@ -221,13 +208,7 @@
       }
  
       .Eventos {
-        /* Estilos para el contenedor principal */
-        background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
-        width: 100%;
-        height: 140%;
-        position: relative;
-        background-position: center;
+        height: 100%;
         justify-content: space-around;
-        background-size: cover;
       }
 }

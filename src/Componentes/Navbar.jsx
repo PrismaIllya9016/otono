@@ -6,6 +6,7 @@ function Navbar() {
   const [background, setBackground] = useState("transparent");
   const [color, setColor] = useState("white");
   const [shadow, setShadow] = useState("none"); // Estado inicial para la sombra
+  const [hideNavbar, setHideNavbar] = useState(false); // Nuevo estado para ocultar la barra de navegación
 
   const interpolateColor = (scrollY, start, end, maxScroll) => {
     const percent = Math.min(scrollY / maxScroll, 0.96); // Asegura que el valor esté entre 0 y 1
@@ -40,6 +41,7 @@ function Navbar() {
       setShadow("none"); // Quita la sombra
     }
   };
+
   const handleNavLinkClick = (e) => {
     e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
 
@@ -57,123 +59,155 @@ function Navbar() {
     }
   };
 
+  const handleIntersection = (entries) => {
+    let showNavbar = true;
+
+    entries.forEach((entry) => {
+      // Si el elemento de contacto o footer está visible en un 60% o más
+      if (
+        (entry.target.id === "contacto" || entry.target.id === "footer") &&
+        entry.intersectionRatio >= 0.6
+      ) {
+        showNavbar = false;
+      }
+    });
+
+    setHideNavbar(!showNavbar);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.6,
+    });
+
+    const contactElement = document.getElementById("contacto");
+    const footerElement = document.getElementById("footer");
+
+    if (contactElement) {
+      observer.observe(contactElement);
+    }
+    if (footerElement) {
+      observer.observe(footerElement);
+    }
 
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
+      observer.disconnect();
     };
-  }); // Asegúrate de incluir las dependencias apropiadas aquí si las hay
+  }, []);
 
   return (
-    <div
-      className="navbar"
-      style={{
-        backgroundColor: background,
-        color: color,
-        boxShadow: shadow,
-        height: "fit-content",
-        zIndex: "2000",
-      }}
-    >
-      {/* NavbarWeb */}
-      <ul
-        className="NavbarWeb"
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-        }}
-      >
-        <li>
-          <a
-            href="#objetivo"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Nosotros
-          </a>
-        </li>
-        <li>
-          <a
-            href="#estancias"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Estancia
-          </a>
-        </li>
-        <li className="habitaciones">
-          <a
-            href="#habitaciones"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Habitaciones
-          </a>
-        </li>
-
-        <a
-          className="navOpciones"
-          href="#Header"
-          onClick={handleNavLinkClick}
-          style={{ color: "inherit", textDecoration: "none" }}
-        >
-          <img src="public/LogoSVG.svg" alt="Logo" className="navbarLogo" />
-        </a>
-
-        <li>
-          <a
-            className="navOpciones"
-            href="#instalaciones"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Instalaciones
-          </a>
-        </li>
-        <li>
-          <a
-            className="navOpciones"
-            href="#actividades"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Actividades
-          </a>
-        </li>
-        <li>
-          <a
-            className="navOpciones"
-            href="#contacto"
-            onClick={handleNavLinkClick}
-            style={{ color: "inherit", textDecoration: "none" }}
-          >
-            Contacto
-          </a>
-        </li>
-      </ul>
+    !hideNavbar && (
       <div
-        className="cellDiv"
+        className="navbar"
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          marginLeft: "14px",
+          backgroundColor: background,
+          color: color,
+          boxShadow: shadow,
+          height: "fit-content",
+          zIndex: "2000",
         }}
       >
-        <a href="#Header">
-          {" "}
-          <img
-            className="logoCell"
-            src="public\PNG Objetivo\LogoCell.svg"
-            alt=""
-          />
-        </a>
+        {/* NavbarWeb */}
+        <ul
+          className="NavbarWeb"
+          style={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+          }}
+        >
+          <li>
+            <a
+              href="#objetivo"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Nosotros
+            </a>
+          </li>
+          <li>
+            <a
+              href="#estancias"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Estancia
+            </a>
+          </li>
+          <li className="habitaciones">
+            <a
+              href="#habitaciones"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Habitaciones
+            </a>
+          </li>
 
-        <MobileMenu></MobileMenu>
+          <a
+            className="navOpciones"
+            href="#Header"
+            onClick={handleNavLinkClick}
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <img src="public/LogoSVG.svg" alt="Logo" className="navbarLogo" />
+          </a>
+
+          <li>
+            <a
+              className="navOpciones"
+              href="#instalaciones"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Instalaciones
+            </a>
+          </li>
+          <li>
+            <a
+              className="navOpciones"
+              href="#actividades"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Actividades
+            </a>
+          </li>
+          <li>
+            <a
+              className="navOpciones"
+              href="#contacto"
+              onClick={handleNavLinkClick}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <div
+          className="cellDiv"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            marginLeft: "14px",
+          }}
+        >
+          <a href="#Header">
+            {" "}
+            <img
+              className="logoCell"
+              src="public\PNG Objetivo\LogoCell.svg"
+              alt=""
+            />
+          </a>
+
+          <MobileMenu></MobileMenu>
+        </div>
       </div>
-    </div>
+    )
   );
 }
 
