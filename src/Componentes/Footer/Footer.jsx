@@ -120,7 +120,7 @@ function Footer() {
               className="whatsapp"
             />
           </a>
-          <a href="#Header" style={{ textDecoration: "none" }}>
+          <a href="#eventos" style={{ textDecoration: "none" }}>
             <button
               style={{
                 fontFamily: "League Spartan",
