@@ -55,31 +55,31 @@ function Instalaciones() {
           interval={2400}
         >
           <div>
-            <img src="public/PNG Objetivo/alberca.jpg" />
+            <img src=".././images/PNG Objetivo/alberca.jpg" />
             <p className="legend">Alberca</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/biblioteca.jpg" />
+            <img src=".././images/PNG Objetivo/biblioteca.jpg" />
             <p className="legend">Biblioteca</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/capilla.jpg" />
+            <img src=".././images/PNG Objetivo/capilla.jpg" />
             <p className="legend">Capilla</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/restaurante.jpg" />
+            <img src=".././images/PNG Objetivo/restaurante.jpg" />
             <p className="legend">Restaurante</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/gimnasio.jpg" />
+            <img src=".././images/PNG Objetivo/gimnasio.jpg" />
             <p className="legend">Gimnasio</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/jardin.jpg" />
+            <img src=".././images/PNG Objetivo/jardin.jpg" />
             <p className="legend">Jardin</p>
           </div>
           <div>
-            <img src="public/PNG Objetivo/spa.jpg" />
+            <img src=".././images/PNG Objetivo/spa.jpg" />
             <p className="legend">Spa</p>
           </div>
         </Carousel>

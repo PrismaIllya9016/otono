@@ -125,7 +125,7 @@ function Contacto() {
                 >
                   <img
                     className="iconoCon"
-                    src="public\Contacto\Mail.svg"
+                    src=".././images/Contacto/Mail.svg"
                     alt=""
                   />
                   <div className="textoCont" style={{ marginTop: "4px" }}>
@@ -148,7 +148,7 @@ function Contacto() {
                     id="telefonos"
                     className="iconoCon"
                     style={{ marginTop: "4px" }}
-                    src="public\Contacto\Telefono.svg"
+                    src=".././images/Contacto/Telefono.svg"
                     alt=""
                   />
                   <div className="textoCont" style={{ marginTop: "4px" }}>
@@ -169,7 +169,7 @@ function Contacto() {
                   <img
                     id="whatsapp"
                     className="iconoCon"
-                    src="public/whatapp.svg"
+                    src=".././images/whatapp.svg"
                     alt=""
                   />
                   <div
@@ -194,7 +194,7 @@ function Contacto() {
                     id="ubicacion"
                     style={{ marginTop: "8px" }}
                     className="iconoCon"
-                    src="public\Contacto\Ubicacion.svg"
+                    src=".././images/Contacto/Ubicacion.svg"
                     alt=""
                   />
                   <div
@@ -227,7 +227,7 @@ function Contacto() {
                       }}
                       className="formuButton"
                     >
-                      <img src="public\Contacto\Ubicacion 2.svg" alt="" />
+                      <img src=".././images/Contacto/Ubicacion 2.svg" alt="" />
                       <div
                         className="textoCont"
                         id="btn_enviar"

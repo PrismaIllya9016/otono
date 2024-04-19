@@ -9,7 +9,7 @@ const MobileMenu = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
-    const position = window.pageYOffset;
+    const position = window.scrollY;
     setScrollPosition(position);
   };
 
@@ -102,7 +102,7 @@ const MobileMenu = () => {
             position: "fixed",
             top: 0,
             right: 0,
-            width: "100%",
+            width: "100vw",
             height: "100%",
             backgroundColor: "rgb(99, 48, 27, .95)",
             animation: animation,

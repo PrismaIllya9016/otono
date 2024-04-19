@@ -1,7 +1,7 @@
 .Habitaciones{
-    background-image: url('public/habitaciones_patron.svg');
-    background-size: cover; /* Asegura que el SVG cubra todo el espacio disponible */
-    background-position: center; /* Centra el SVG en el contenedor */
+    background-image: url('.././images/habitaciones_patron.svg');
+    background-size: cover; 
+    background-position: center; 
     width: 100%;
     position: relative;
 }

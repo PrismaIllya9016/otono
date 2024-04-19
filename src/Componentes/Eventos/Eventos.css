@@ -53,7 +53,7 @@
 }
 .Eventos {
       /* Estilos para el contenedor principal */
-      background-image: url('public/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
+      background-image: url('.././images/renta_eventos1 1.png'); /* Cambia esto por la ruta de tu imagen */
       width: 100%;
       height: 40vh;
       position: relative;

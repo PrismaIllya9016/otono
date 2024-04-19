@@ -31,7 +31,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src/Componentes/Objetivo/svgObjetivo/Group 1.svg"
+              src=".././images/svgObjetivo/Group 1.svg"
               alt=""
             />{" "}
             Respeto
@@ -40,7 +40,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (3).svg"
+              src=".././images/svgObjetivo/Capa_1 (3).svg"
               alt=""
             />{" "}
             Honestidad
@@ -49,7 +49,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (6).svg"
+              src=".././images/svgObjetivo/Capa_1 (6).svg"
               alt=""
             />{" "}
             Amor
@@ -58,7 +58,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1.svg"
+              src=".././images/svgObjetivo/Capa_1.svg"
               alt=""
             />{" "}
             Amabilidad
@@ -67,7 +67,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (2).svg"
+              src=".././images/svgObjetivo/Capa_1 (2).svg"
               alt=""
             />{" "}
             Responsabilidad
@@ -76,7 +76,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (5).svg"
+              src=".././images/svgObjetivo/Capa_1 (5).svg"
               alt=""
             />{" "}
             Cuidado integral
@@ -85,7 +85,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (1).svg"
+              src=".././images/svgObjetivo/Capa_1 (1).svg"
               alt=""
             />{" "}
             Seguridad
@@ -94,7 +94,7 @@ function Objetivo() {
             {" "}
             <img
               style={descStyles}
-              src="src\Componentes\Objetivo\svgObjetivo\Capa_1 (4).svg"
+              src=".././images/svgObjetivo/Capa_1 (4).svg"
               alt=""
             />{" "}
             Tranquilidad y confort
@@ -103,7 +103,7 @@ function Objetivo() {
       </Grid>
       <Grid item xs={12} md={5}>
         {" "}
-        <img src="public/fotoPelota.png" alt="" style={imageStyles} />
+        <img src=".././images/fotoPelota.png" alt="" style={imageStyles} />
       </Grid>
     </Grid>
   );

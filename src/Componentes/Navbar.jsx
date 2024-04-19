@@ -152,7 +152,11 @@ function Navbar() {
             onClick={handleNavLinkClick}
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            <img src="public/LogoSVG.svg" alt="Logo" className="navbarLogo" />
+            <img
+              src="./images/logotipo_casaotono.svg"
+              alt="Logo"
+              className="navbarLogo"
+            />
           </a>
 
           <li>
@@ -199,7 +203,7 @@ function Navbar() {
             {" "}
             <img
               className="logoCell"
-              src="public\PNG Objetivo\LogoCell.svg"
+              src="./images/PNG Objetivo/LogoCell.svg"
               alt=""
             />
           </a>

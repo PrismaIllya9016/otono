@@ -4,9 +4,9 @@ import { Box, Container, Typography, Grid } from "@mui/material";
 
 function Habitaciones() {
   const [imagenes, setImagenes] = useState({
-    principal: "public/estandar1.jpg",
-    secundaria1: "public/estandar2.jpg",
-    secundaria2: "public/estandar3.jpg",
+    principal: ".././images/estandar1.jpg",
+    secundaria1: ".././images/estandar2.jpg",
+    secundaria2: ".././images/estandar3.jpg",
   });
   const [seleccionado, setSeleccionado] = useState("Estandar");
   const [label, setLabel] = useState("Estandar");
@@ -41,25 +41,25 @@ function Habitaciones() {
   const images = [
     {
       label: "Estandar",
-      principal: "public/estandar1.jpg",
-      secundaria1: "public/estandar2.jpg",
-      secundaria2: "public/estandar3.jpg",
+      principal: ".././images/estandar1.jpg",
+      secundaria1: ".././images/estandar2.jpg",
+      secundaria2: ".././images/estandar3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado.",
     },
     {
       label: "Mini suite",
-      principal: "public/minisuite1.jpg",
-      secundaria1: "public/minisuite2.jpg",
-      secundaria2: "public/minisuite3.jpg",
+      principal: ".././images/minisuite1.jpg",
+      secundaria1: ".././images/minisuite2.jpg",
+      secundaria2: ".././images/minisuite3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor",
     },
     {
       label: "Duplex",
-      principal: "public/duplex1.jpg",
-      secundaria1: "public/duplex2.jpg",
-      secundaria2: "public/duplex3.jpg",
+      principal: ".././images/duplex1.jpg",
+      secundaria1: ".././images/duplex2.jpg",
+      secundaria2: ".././images/duplex3.jpg",
       textoImagen:
         "Incluye: Baño privado, telefonía, internet, TV con cable, aire acondicionado, sala recibidor (compartida)",
     },

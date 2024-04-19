@@ -13,7 +13,7 @@ function Actividades() {
         <div className="estanciasFotos">
           <div className="imagenesRow">
             <div className="imagenActividades" id="imagenActividades1">
-              <img src="public/terapia_fisica.jpg" alt="Logo" />
+              <img src=".././images/terapia_fisica.jpg" alt="Logo" />
               <div className="original-text">
                 Terapias Fisicas (Individuales y grupales)
               </div>
@@ -24,7 +24,7 @@ function Actividades() {
               </div>
             </div>
             <div className="imagenActividades" id="imagenActividades2">
-              <img src="public/terapia_cognitiva.jpg" alt="Logo" />
+              <img src=".././images/terapia_cognitiva.jpg" alt="Logo" />
               <div className="original-text">
                 Terapias Cognitivas (Personalizadas por residente)
               </div>
@@ -35,7 +35,7 @@ function Actividades() {
               </div>
             </div>
             <div className="imagenActividades" id="imagenActividades3">
-              <img src="public/buffet_familiar.jpg" alt="Logo" />
+              <img src=".././images/buffet_familiar.jpg" alt="Logo" />
               <div className="original-text">
                 Sábado buffet desayuno familiar
               </div>
@@ -46,7 +46,7 @@ function Actividades() {
               </div>
             </div>
             <div className="imagenActividades" id="imagenActividades4">
-              <img src="public/eventos.jpg" alt="Logo" />
+              <img src=".././images/eventos.jpg" alt="Logo" />
               <div className="original-text">Eventos</div>
               <div className="hola123">
                 Transformamos cada efeméride en un evento especial para nuestros

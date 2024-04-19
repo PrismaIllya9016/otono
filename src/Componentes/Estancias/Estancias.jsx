@@ -25,7 +25,7 @@ function Estancias() {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
-            <img src="public/estancia1 1.png" alt="Logo" />
+            <img src=".././images/estancia1 1.png" alt="Logo" />
             <div className="original-text">Temporal</div>
             <div className="hola123">
               Tu decides los dias de estancia, sin dejar de disfrutar los
@@ -54,7 +54,7 @@ function Estancias() {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
-            <img src="public/estancia2 1.png" alt="Logo" />
+            <img src=".././images/estancia2 1.png" alt="Logo" />
             <div className="original-text">Casa de Dia</div>
             <div className="hola123">
               Estancia de 4 a 12 horas con horario abierto de entrada y salida.
@@ -78,7 +78,7 @@ function Estancias() {
             onMouseEnter={handleHover}
             onMouseLeave={handleHover}
           >
-            <img src="public/estancia3 1.png" alt="Logo" />
+            <img src=".././images/estancia3 1.png" alt="Logo" />
             <div className="original-text">Permanente</div>
             <div className="hola123">
               Descubre la calidad de vida plena para adultos mayores con cuidado

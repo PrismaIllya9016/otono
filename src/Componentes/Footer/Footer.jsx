@@ -28,7 +28,7 @@ function Footer() {
     <div className="footer-container" id="footer">
       <a href="#" style={{ textDecoration: "none" }}>
         <img
-          src="public/logotipo_casaotono.svg"
+          src=".././images/logotipo_casaotono.svg"
           alt="Logo"
           className="footerLogo"
         />
@@ -100,7 +100,7 @@ function Footer() {
             style={{ textDecoration: "none" }}
           >
             <img
-              src="public/facebook_icon.svg"
+              src=".././images/facebook_icon.svg"
               alt="Logo"
               className="facebook"
             />
@@ -110,12 +110,16 @@ function Footer() {
             target="_blank"
             style={{ textDecoration: "none" }}
           >
-            <img src="public/googlemaps_icon.svg" alt="Logo" className="maps" />
+            <img
+              src=".././images/googlemaps_icon.svg"
+              alt="Logo"
+              className="maps"
+            />
           </a>
           <a href="" target="_blank" style={{ textDecoration: "none" }}>
             <img
               onClick={openWhatsApp}
-              src="public/whats_icon.svg"
+              src=".././images/whats_icon.svg"
               alt="Logo"
               className="whatsapp"
             />

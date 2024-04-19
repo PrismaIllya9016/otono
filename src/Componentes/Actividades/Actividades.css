@@ -1,6 +1,6 @@
 .seccionActividades {
   /* Añadir imagen de fondo */
-  background-image: url('public/habitaciones_patron.svg');
+  background-image: url('.././images/habitaciones_patron.svg');
   /* Hacer que la imagen de fondo se quede fija */
   background-attachment: fixed;
   /* Asegurar que la imagen cubra el espacio disponible */
