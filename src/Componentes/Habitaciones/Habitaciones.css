@@ -1,125 +1,63 @@
-.Habitaciones{
-    background-image: url('.././images/habitaciones_patron.svg');
-    background-size: cover; 
-    background-position: center; 
-    width: 100%;
-    position: relative;
+.Habitaciones {
+  background-image: url("/images/habitaciones_patron.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
 }
 
-.TitulosCentradosMovile{
-    display:none
+.TitulosCentradosMovile {
+  display: none;
 }
 
-.ImagenHabitacion{
-    cursor: pointer;
+.ImagenHabitacion {
+  cursor: pointer;
 }
 
 .custom-shape-divider-bottom-1710877318 .shape-fill2 {
-    fill: #FCF9F5;
+  fill: #fcf9f5;
 }
 
 /*Media Query para celulares normales*/
-@media (min-width:361px) and (max-width: 599px) {
-.Menu {
-      display: none !important; 
-}
-.TitulosCentradosMovile{
-    display:inline;
+@media (min-width: 361px) and (max-width: 599px) {
+  .Menu {
+    display: none !important;
+  }
+  .TitulosCentradosMovile {
+    display: inline;
     font-size: 1.25rem !important;
     margin-bottom: 10% !important;
-}
-.Habitaciones{
-    height: 135%;  
+  }
+  .Habitaciones {
+    height: 135%;
+  }
 
-}
-
-.TitulosCentrados{
+  .TitulosCentrados {
     font-size: 2rem;
-}
-.Incluye{
-    width: 90% ;
+  }
+  .Incluye {
+    width: 90%;
     margin: auto !important;
     text-align: center;
     justify-content: center;
     align-items: center;
     height: 100px;
     display: flex;
-   font-size: 1rem !important;
-}
-.ImagenHabitacion{
-      margin-top: 0 ;
-}
-.cajaCompleta {
-        flex-direction: column;
-}
-.MenuMovil{
-    margin-top: 50px ;
-    margin-right: 48px ;
-}
-#desHab{
-max-height: 250px;
-  font-family: 'League Spartan';
-  font-style: normal;
-  font-weight: 300;
-  width: 90%;
-  font-size: 1.25rem; /* Tamaño predeterminado */
-  line-height: 130%;
-  text-align: "center";
-  display: flex;
-  align-items: center ;
-  text-align: center;
-  color: #000000;
-}
-.ImagenContainer{
-    padding: 12.5px;
-}
-.ImagenContainer #secundaria1,
-.ImagenContainer #secundaria2{
-    margin-top: -5px;
-}
-}
-
-@media (min-width:321px) and (max-width:360px){
-    .Menu {
-        display: none !important; 
+    font-size: 1rem !important;
   }
-  .TitulosCentradosMovile{
-      display:inline;
-      font-size: 1.25rem !important;
-      margin-bottom: 10% !important;
-  }
-  .Habitaciones{
-      height: 130%;  
-  
-  }
-  
-  .TitulosCentrados{
-      font-size: 2rem;
-      margin-top: 10%;
-  }
-  .Incluye{
-      width: 90% ;
-      margin: auto !important;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-      display: flex;
-     font-size: 1rem !important;
-  }
-  .ImagenHabitacion{
-        margin-top: 0 ;
+  .ImagenHabitacion {
+    margin-top: 0;
   }
   .cajaCompleta {
-          flex-direction: column;
+    flex-direction: column;
   }
-  .MenuMovil{
-      margin-top: 50px ;
-      margin-right: 48px ;
+  .MenuMovil {
+    margin-top: 50px;
+    margin-right: 48px;
   }
-  #desHab{
-  max-height: 250px;
-    font-family: 'League Spartan';
+  #desHab {
+    max-height: 250px;
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 300;
     width: 90%;
@@ -127,184 +65,240 @@ max-height: 250px;
     line-height: 130%;
     text-align: "center";
     display: flex;
-    align-items: center ;
+    align-items: center;
     text-align: center;
     color: #000000;
   }
-  .ImagenContainer{
-      padding: 12.5px;
+  .ImagenContainer {
+    padding: 12.5px;
   }
   .ImagenContainer #secundaria1,
-  .ImagenContainer #secundaria2{
-      margin-top: -5px;
+  .ImagenContainer #secundaria2 {
+    margin-top: -5px;
   }
-}
- 
-@media  (max-width: 320px) {
-    .Menu {
-          display: none !important ; 
-    }
-    .TitulosCentradosMovile{
-        display:inline;
-        font-size: 1.5rem !important;
-    }
-    .TitulosCentrados{
-        font-size: 1.5rem;
-        margin-top: 10%;
-    }
-    .Habitaciones{
-        height: 150%;  
-        height: 185vh; 
-    }
-    .Incluye{
-        width: 100% ;
-        text-align: center;
-        font-size: 1rem !important ;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        display: flex;
-       
-    }
-    .ImagenHabitacion{
-          margin-top: 0 ;
-    }
-    .cajaCompleta {
-            flex-direction: column;
-    }
-    .MenuMovil{
-        margin-top: 50px ;
-        margin-right: 48px ;
-    }
-    #desHab{
-    max-height: 250px;
-      font-family: 'League Spartan';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 1.25rem; /* Tamaño predeterminado */
-      line-height: 130%;
-      text-align: "center";
-      display: flex;
-      align-items: center ;
-      text-align: center;
-      color: #000000;
-    }
-    .ImagenContainer{
-        padding: 12.5px;
-    }
-    .ImagenContainer #secundaria1,
-    .ImagenContainer #secundaria2{
-        margin-top: -5px;
-    }
 }
 
-@media (min-width:600px) and (max-width:1023px){
-    .Menu {
-        display: none !important;
-    }
-    .Habitaciones{
-        height: 115vh;
-    }
-  .TitulosCentradosMovile{
-      display:inline;
-      font-size: 2rem !important;
+@media (min-width: 321px) and (max-width: 360px) {
+  .Menu {
+    display: none !important;
   }
-  .TitulosCentrados{
+  .TitulosCentradosMovile {
+    display: inline;
+    font-size: 1.25rem !important;
+    margin-bottom: 10% !important;
+  }
+  .Habitaciones {
+    height: 130%;
+  }
+
+  .TitulosCentrados {
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+  .Incluye {
+    width: 90%;
+    margin: auto !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    font-size: 1rem !important;
+  }
+  .ImagenHabitacion {
+    margin-top: 0;
+  }
+  .cajaCompleta {
+    flex-direction: column;
+  }
+  .MenuMovil {
+    margin-top: 50px;
+    margin-right: 48px;
+  }
+  #desHab {
+    max-height: 250px;
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 300;
+    width: 90%;
+    font-size: 1.25rem; /* Tamaño predeterminado */
+    line-height: 130%;
+    text-align: "center";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .ImagenContainer {
+    padding: 12.5px;
+  }
+  .ImagenContainer #secundaria1,
+  .ImagenContainer #secundaria2 {
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .Menu {
+    display: none !important ;
+  }
+  .TitulosCentradosMovile {
+    display: inline;
+    font-size: 1.5rem !important;
+  }
+  .TitulosCentrados {
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
+  .Habitaciones {
+    height: 150%;
+    height: 185vh;
+  }
+  .Incluye {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem !important ;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
+  }
+  .ImagenHabitacion {
+    margin-top: 0;
+  }
+  .cajaCompleta {
+    flex-direction: column;
+  }
+  .MenuMovil {
+    margin-top: 50px;
+    margin-right: 48px;
+  }
+  #desHab {
+    max-height: 250px;
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25rem; /* Tamaño predeterminado */
+    line-height: 130%;
+    text-align: "center";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  .ImagenContainer {
+    padding: 12.5px;
+  }
+  .ImagenContainer #secundaria1,
+  .ImagenContainer #secundaria2 {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .Menu {
+    display: none !important;
+  }
+  .Habitaciones {
+    height: 115vh;
+  }
+  .TitulosCentradosMovile {
+    display: inline;
+    font-size: 2rem !important;
+  }
+  .TitulosCentrados {
     font-size: 2.5rem;
     margin-top: 5%;
   }
-  .Incluye{
-      width: 100% ;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
-      display: flex;
-     
+  .Incluye {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    display: flex;
   }
   .cajaCompleta {
-          flex-direction: column;
-          margin-top: -10%;
+    flex-direction: column;
+    margin-top: -10%;
   }
 
-  .descCentrada{
+  .descCentrada {
     width: 90%;
     text-align: center;
     font-size: 1.625rem !important;
     line-height: 130%;
- }
-  #desHab{
-  max-height: 250px;
-    font-family: 'League Spartan';
+  }
+  #desHab {
+    max-height: 250px;
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 300;
     font-size: 1.5rem; /* Tamaño predeterminado */
     line-height: 130%;
     text-align: "center";
     display: flex;
-    align-items: center ;
+    align-items: center;
     text-align: center;
     color: #000000;
   }
-  .ImagenContainer{
+  .ImagenContainer {
     margin-top: 80% !important;
     padding: 12.5px;
-}
-.ImagenContainer #secundaria1,
-.ImagenContainer #secundaria2{
+  }
+  .ImagenContainer #secundaria1,
+  .ImagenContainer #secundaria2 {
     margin-top: -5px;
+  }
 }
-}
- 
-  @media (min-width: 1024px) and (max-width:1280px) {
- .MenuMovil{
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .MenuMovil {
     display: none !important ;
- }
- .Menu{
+  }
+  .Menu {
     padding-left: 12.5% !important;
- }
- .descCentrada{
+  }
+  .descCentrada {
     width: 60%;
     margin-top: 5%;
     text-align: center;
     font-size: 1.625rem;
     line-height: 130%;
- }
- .TitulosCentrados{
+  }
+  .TitulosCentrados {
     margin-top: 5%;
     font-size: 2.5rem;
- }
- .ImagenContainer {
+  }
+  .ImagenContainer {
     width: 100%;
- }
- .Habitaciones{
+  }
+  .Habitaciones {
     height: 140vh;
- }
- .Incluye{
+  }
+  .Incluye {
     font-size: 1.25rem !important;
- }
+  }
 }
 
 @media (min-width: 1281px) {
-    .MenuMovil{
-       display: none !important ;
-    }
-   .TitulosCentrados{
+  .MenuMovil {
+    display: none !important ;
+  }
+  .TitulosCentrados {
     font-size: 2.5rem;
     margin-top: 2.5%;
-   }
-    .descCentrada{
-       width: 60%;
-       text-align: center;
-       font-size: 1.625rem;
-       line-height: 130% !important;
-    }
-    .ImagenContainer {
-       width: 100%;
-    }
-    .Habitaciones{
-       height: 110vh;
-    }
-   }
-
-
+  }
+  .descCentrada {
+    width: 60%;
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 130% !important;
+  }
+  .ImagenContainer {
+    width: 100%;
+  }
+  .Habitaciones {
+    height: 110vh;
+  }
+}

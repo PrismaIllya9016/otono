@@ -63,10 +63,7 @@ function Estancias() {
               Servicios que incluye:
               <ul style={{ padding: 0 }}>
                 <li>- Servicio de vigilancia de enfermeria las 24 hrs</li>
-                <li>
-                  - Cámaras de vigilancia las 24 horas, con acceso de los
-                  familiares a través de una app
-                </li>
+
                 <li>- Alimentación</li>
                 <li>- Terapias físicas (grupales o personalizadas)</li>
               </ul>
