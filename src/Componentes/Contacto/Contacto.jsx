@@ -153,7 +153,7 @@ function Contacto() {
                   />
                   <div className="textoCont" style={{ marginTop: "4px" }}>
                     {" "}
-                    667-721-52-03 <br /> 667-721-52-28
+                    667-721-52-03 <br /> 667-721-52-58
                   </div>
                 </div>
                 <div

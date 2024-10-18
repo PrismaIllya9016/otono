@@ -1,6 +1,6 @@
 .seccionActividades {
   /* Añadir imagen de fondo */
-  background-image: url('.././images/habitaciones_patron.svg');
+  background-image: url("/images/habitaciones_patron.svg");
   /* Hacer que la imagen de fondo se quede fija */
   background-attachment: fixed;
   /* Asegurar que la imagen cubra el espacio disponible */
@@ -11,55 +11,49 @@
   min-height: 100vh;
 }
 
-  
-  
-  
-  
-  
-  
-  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-    /* Estilos para Desktop */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* Estilos para Desktop */
   .actividadesFotos {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .imagenActividades {
-      width: calc(22%); /* Ajusta el ancho de cada imagen */
-      display: absolute;
-      align-items: center;
-      position: relative; 
-      top: 10%
-    }
+    width: calc(22%); /* Ajusta el ancho de cada imagen */
+    display: absolute;
+    align-items: center;
+    position: relative;
+    top: 10%;
+  }
   .imagenActividades img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
-    }
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
+  }
   .imagenesRow {
-      display: flex;
-      justify-content: space-around;
-      margin: 10%;
-      width: 100%;
-      height: 60%;
-      margin-top: 25%;
-    }
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    width: 100%;
+    height: 60%;
+    margin-top: 25%;
+  }
   .seccionActividades {
-      background-color: #FFFFFF;
-      width: 100%;
-      height: 100%;
-      position:relative;
-      display:flex; /* Convertido en un contenedor flex */
-      flex-direction: column; /* Alinear los elementos verticalmente */
-      justify-content: center; /* Centrar verticalmente los elementos */
-      align-items: center; /* Centrar horizontalmente los elementos */
-    }
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex; /* Convertido en un contenedor flex */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente los elementos */
+    align-items: center; /* Centrar horizontalmente los elementos */
+  }
   .subtituloActividades {
     position: absolute;
     width: 70%;
-    top:17%;
-    font-family: 'League Spartan';
+    top: 17%;
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 300;
     text-align: center;
@@ -69,132 +63,130 @@
 
     align-items: center; /* Centrar horizontalmente los elementos */
     color: #000000;
-    }
+  }
   .tituloActividades {
-  position: absolute;
-  font-family: 'League Spartan';
-  top: 5vh;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 50px;
-  color: #582114;
-
-    }
+    position: absolute;
+    font-family: "League Spartan";
+    top: 5vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #582114;
+  }
   .imagenActividades::before {
-      content: ""; /* Agrega un pseudo-elemento */
-      position: absolute; /* Posiciona el pseudo-elemento */
-      top: 0; /* Coloca el pseudo-elemento en la parte superior */
-      left: 0; /* Coloca el pseudo-elemento en la parte izquierda */
-      width: 100%; /* Ancho completo del contenedor */
-      height: 100%; /* Altura completa del contenedor */
-      background-color: #582114; /* Color de fondo */
-      opacity: 0.7; /* Opacidad del color de fondo */
-      z-index: 99; /* Mueve el pseudo-elemento detrás de las imágenes */
-      transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-    }
+    content: ""; /* Agrega un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0; /* Coloca el pseudo-elemento en la parte superior */
+    left: 0; /* Coloca el pseudo-elemento en la parte izquierda */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+    background-color: #582114; /* Color de fondo */
+    opacity: 0.7; /* Opacidad del color de fondo */
+    z-index: 99; /* Mueve el pseudo-elemento detrás de las imágenes */
+    transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+  }
   .imagenActividades:hover::before {
-      opacity: 0.92; /* Opacidad del color de fondo al hacer hover */
-    }
-  .imagenActividades .original-text{
-      position: absolute;
-      font-size: 1.5rem !important;
-      top: 60%; /* Ajusta la posición vertical según tus necesidades */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      z-index: 999;
-      padding: 10px;
-      text-align: center;
-      width: 100%; /* Ancho del texto */
-      transition: opacity 0.3s ease; /* Transición suave de opacidad */
-      opacity: 1; /* Establece la opacidad predeterminada */
-    }
-    #imagenActividades4 .original-text{
-      left: 80%;
-    }
-  .imagenActividades:hover .original-text{
-      opacity: 1; /* Establece la opacidad a 1 al hacer hover */
-      top: 17.5%;
-      font-size: 1.4rem !important; 
-      width: 100%;
-    }
-
-    #imagenActividades4:hover .original-text{
-      left: 80%;
-    }
-    .imagenActividades .hola123{
-      position: absolute;
-      font-size: 1.25rem;
-      top: 20%; /* Ajusta la posición vertical según tus necesidades */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      z-index: 999;
-      padding: 10px;
-      line-height: 130%;
-      text-align: center;
-      width: 90%; /* Ancho del texto */
-      transition: opacity 0.3s ease; /* Transición suave de opacidad */
-      opacity: 0; /* Establece la opacidad predeterminada */
-    }
-    .imagenActividades:hover .hola123{
-      opacity: 1;
-      top: 15vh;
-      line-height: 120% !important;
-    }
-}
-
-
-@media only screen and  (max-width: 1023px) {
-    .seccionActividades{
-      display: none;
-    }
+    opacity: 0.92; /* Opacidad del color de fondo al hacer hover */
+  }
+  .imagenActividades .original-text {
+    position: absolute;
+    font-size: 1.5rem !important;
+    top: 60%; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 999;
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ancho del texto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    opacity: 1; /* Establece la opacidad predeterminada */
+  }
+  #imagenActividades4 .original-text {
+    left: 80%;
+  }
+  .imagenActividades:hover .original-text {
+    opacity: 1; /* Establece la opacidad a 1 al hacer hover */
+    top: 17.5%;
+    font-size: 1.4rem !important;
+    width: 100%;
   }
 
-  @media only screen and (min-width: 1281px) {
-    /* Estilos para Desktop */
-  .actividadesFotos {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  .imagenActividades {
-      width: calc(22%); /* Ajusta el ancho de cada imagen */
-      display: absolute;
-      align-items: center;
-      position: relative; 
-      top: 10%
-    }
-  .imagenActividades img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
-    }
-  .imagenesRow {
-      display: flex;
-      justify-content: space-around;
-      margin: 10%;
-      width: 100%;
-      height: 60%;
-      margin-top: 25%;
-    }
+  #imagenActividades4:hover .original-text {
+    left: 80%;
+  }
+  .imagenActividades .hola123 {
+    position: absolute;
+    font-size: 1.25rem;
+    top: 20%; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 999;
+    padding: 10px;
+    line-height: 130%;
+    text-align: center;
+    width: 90%; /* Ancho del texto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    opacity: 0; /* Establece la opacidad predeterminada */
+  }
+  .imagenActividades:hover .hola123 {
+    opacity: 1;
+    top: 15vh;
+    line-height: 120% !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
   .seccionActividades {
-      background-color: #FFFFFF;
-      width: 100%;
-      height: 100%;
-      position:relative;
-      display:flex; /* Convertido en un contenedor flex */
-      flex-direction: column; /* Alinear los elementos verticalmente */
-      justify-content: center; /* Centrar verticalmente los elementos */
-      align-items: center; /* Centrar horizontalmente los elementos */
-    }
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  /* Estilos para Desktop */
+  .actividadesFotos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenActividades {
+    width: calc(22%); /* Ajusta el ancho de cada imagen */
+    display: absolute;
+    align-items: center;
+    position: relative;
+    top: 10%;
+  }
+  .imagenActividades img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
+  }
+  .imagenesRow {
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    width: 100%;
+    height: 60%;
+    margin-top: 25%;
+  }
+  .seccionActividades {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex; /* Convertido en un contenedor flex */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente los elementos */
+    align-items: center; /* Centrar horizontalmente los elementos */
+  }
   .subtituloActividades {
     position: absolute;
     width: 60%;
-    top:17%;
-    font-family: 'League Spartan';
+    top: 17%;
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 300;
     text-align: center;
@@ -204,82 +196,79 @@
 
     align-items: center; /* Centrar horizontalmente los elementos */
     color: #000000;
-    }
+  }
   .tituloActividades {
-  position: absolute;
-  font-family: 'League Spartan';
-  top: 5vh;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 50px;
-  color: #582114;
-
-    }
+    position: absolute;
+    font-family: "League Spartan";
+    top: 5vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 50px;
+    color: #582114;
+  }
   .imagenActividades::before {
-      content: ""; /* Agrega un pseudo-elemento */
-      position: absolute; /* Posiciona el pseudo-elemento */
-      top: 0; /* Coloca el pseudo-elemento en la parte superior */
-      left: 0; /* Coloca el pseudo-elemento en la parte izquierda */
-      width: 100%; /* Ancho completo del contenedor */
-      height: 100%; /* Altura completa del contenedor */
-      background-color: #582114; /* Color de fondo */
-      opacity: 0.7; /* Opacidad del color de fondo */
-      z-index: 99; /* Mueve el pseudo-elemento detrás de las imágenes */
-      transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
-      transform: scaleY(-1);
-    }
+    content: ""; /* Agrega un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0; /* Coloca el pseudo-elemento en la parte superior */
+    left: 0; /* Coloca el pseudo-elemento en la parte izquierda */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+    background-color: #582114; /* Color de fondo */
+    opacity: 0.7; /* Opacidad del color de fondo */
+    z-index: 99; /* Mueve el pseudo-elemento detrás de las imágenes */
+    transition: opacity 0.3s ease; /* Agrega una transición suave para el cambio de opacidad */
+    transform: scaleY(-1);
+  }
   .imagenActividades:hover::before {
-      opacity: 0.96; /* Opacidad del color de fondo al hacer hover */
-    }
-  .imagenActividades .original-text{
-      position: absolute;
-      font-size: 2rem !important;
-      top: 60%; /* Ajusta la posición vertical según tus necesidades */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      z-index: 999;
-      padding: 10px;
-      text-align: center;
-      width: 80%; /* Ancho del texto */
-      transition: opacity 0.3s ease; /* Transición suave de opacidad */
-      opacity: 1; /* Establece la opacidad predeterminada */
-    }
-    #imagenActividades4 .original-text{
-      left: 70%;
-    }
+    opacity: 0.96; /* Opacidad del color de fondo al hacer hover */
+  }
+  .imagenActividades .original-text {
+    position: absolute;
+    font-size: 2rem !important;
+    top: 60%; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 999;
+    padding: 10px;
+    text-align: center;
+    width: 80%; /* Ancho del texto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    opacity: 1; /* Establece la opacidad predeterminada */
+  }
+  #imagenActividades4 .original-text {
+    left: 70%;
+  }
 
-  .imagenActividades:hover .original-text{
-      opacity: 1; /* Establece la opacidad a 1 al hacer hover */
-      top: 20%;
-      font-size: 1.625rem !important; 
-      width: 95%;
-    }
-    
-    #imagenActividades4:hover .original-text{
-      left: 80%
-    }
+  .imagenActividades:hover .original-text {
+    opacity: 1; /* Establece la opacidad a 1 al hacer hover */
+    top: 20%;
+    font-size: 1.625rem !important;
+    width: 95%;
+  }
 
-    .imagenActividades .hola123{
-      position: absolute;
-      font-size: 1.4rem;
-      top: 35% !important; /* Ajusta la posición vertical según tus necesidades */
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      z-index: 999;
-      padding: 10px;
-      line-height: 1.1;
-      text-align: center;
-      width: 80%; /* Ancho del texto */
-      transition: opacity 0.3s ease; /* Transición suave de opacidad */
-      opacity: 0; /* Establece la opacidad predeterminada */
-    }
-    .imagenActividades:hover .hola123{
-      opacity: 1;
-      top: 15vh
+  #imagenActividades4:hover .original-text {
+    left: 80%;
+  }
 
-    }
+  .imagenActividades .hola123 {
+    position: absolute;
+    font-size: 1.4rem;
+    top: 35% !important; /* Ajusta la posición vertical según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 999;
+    padding: 10px;
+    line-height: 1.1;
+    text-align: center;
+    width: 80%; /* Ancho del texto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+    opacity: 0; /* Establece la opacidad predeterminada */
+  }
+  .imagenActividades:hover .hola123 {
+    opacity: 1;
+    top: 15vh;
+  }
 }
-
